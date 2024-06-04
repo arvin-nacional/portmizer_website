@@ -92,12 +92,12 @@ ListItem.displayName = "ListItem";
 
 const Navbar = () => {
   return (
-    <nav className="flex background-light900_dark200 fixed z-50 w-full navbar-gradient justify-center ">
+    <nav className="flex background-light900_dark200 fixed z-50 w-full navbar-gradient justify-center items-center ">
       <div className="flex gap-5 p-6 dark:shadow-none w-full sm:px-12 max-w-[1200px] items-center justify-between ">
         <Link href="/">
           <Image
             src="/assets/images/white_logo.svg"
-            width={200}
+            width={230}
             height={60}
             alt="logo"
           />
@@ -172,8 +172,13 @@ const Navbar = () => {
             </div>
           </NavigationMenuList>
         </NavigationMenu>
-        <Link href="/docs" className="text-white">
-          Service Locations
+        <Link href="/docs">
+          <button
+            type="button"
+            className="text-primary-500 bg-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-3xl text-sm px-6 py-2.5 text-center"
+          >
+            Contact Us
+          </button>
         </Link>
       </div>
     </nav>
