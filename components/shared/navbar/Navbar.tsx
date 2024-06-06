@@ -1,6 +1,6 @@
 "use client";
 
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -55,9 +55,35 @@ const ListItem = React.forwardRef<
 ListItem.displayName = "ListItem";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <nav className="flex background-light900_dark200 fixed z-50 w-full navbar-gradient justify-center items-center ">
-      <div className="flex gap-5 md:gap-2 p-6 dark:shadow-none w-full sm:px-12 lg:max-w-[1200px] items-center justify-between 2xl:max-w-[1400px]">
+    <nav
+      className={cn(
+        "flex fixed z-50 w-full  justify-center items-center transition-all duration-500",
+        scrolled ? "navbar-solid" : "navbar"
+      )}
+    >
+      <div
+        className={cn(
+          "flex gap-5 md:gap-2 dark:shadow-none w-full sm:px-12 lg:max-w-[1200px] items-center justify-between 2xl:max-w-[1400px]",
+          scrolled ? "p-4" : "p-6"
+        )}
+      >
         <Link href="/">
           <Image
             src="/assets/images/white_logo.svg"

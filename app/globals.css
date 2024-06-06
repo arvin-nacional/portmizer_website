@@ -7,6 +7,10 @@
     background: linear-gradient(360deg, #0a7a01 0%, #45bc01 100%);
   }
 
+  .navbar-solid {
+    background-color: #32a600;
+  }
+
   .card-wrapper {
     @apply bg-light-900 dark:dark-gradient shadow-light-100 dark:shadow-dark-100;
   }
@@ -85,5 +89,13 @@
 
   .subtle-regular {
     @apply text-[10px] font-normal leading-[13px];
+  }
+  .navbar {
+    background: transparent;
+    transition: background-color 1s ease-in-out;
+  }
+
+  .navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }
