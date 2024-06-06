@@ -57,7 +57,7 @@ ListItem.displayName = "ListItem";
 const Navbar = () => {
   return (
     <nav className="flex background-light900_dark200 fixed z-50 w-full navbar-gradient justify-center items-center ">
-      <div className="flex gap-5 md:gap-2 p-6 dark:shadow-none w-full sm:px-12 max-w-[1200px] items-center justify-between ">
+      <div className="flex gap-5 md:gap-2 p-6 dark:shadow-none w-full sm:px-12 lg:max-w-[1200px] items-center justify-between 2xl:max-w-[1400px]">
         <Link href="/">
           <Image
             src="/assets/images/white_logo.svg"
@@ -66,7 +66,7 @@ const Navbar = () => {
             alt="logo"
           />
         </Link>
-        <NavigationMenu className="max-sm:hidden">
+        <NavigationMenu className="max-lg:hidden">
           <NavigationMenuList>
             <div className="flex justify-between w-full ">
               <NavigationMenuItem>
@@ -144,7 +144,7 @@ const Navbar = () => {
             </div>
           </NavigationMenuList>
         </NavigationMenu>
-        <Link href="/docs" className="max-sm:hidden">
+        <Link href="/docs" className="max-lg:hidden">
           <button
             type="button"
             className="text-primary-500 bg-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-3xl text-sm px-6 py-2.5 text-center text-nowrap"
