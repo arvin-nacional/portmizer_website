@@ -15,8 +15,9 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import MobileNav from "./MobileNav";
 
-const components: { title: string; href: string; description: string }[] = [
+const products: { title: string; href: string; description: string }[] = [
   {
     title: "Cargotec-Kalmar",
     href: "/docs/primitives/alert-dialog",
@@ -54,6 +55,32 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ];
 
+const company: { title: string; href: string; description: string }[] = [
+  {
+    title: "About",
+    href: "/about",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "Gallery",
+    href: "/gallery",
+    description:
+      "For sighted users to preview content available behind a link.",
+  },
+  {
+    title: "News and Updates",
+    href: "/news",
+    description:
+      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+  },
+  {
+    title: "Careers",
+    href: "/careers",
+    description: "Visually or semantically separates content.",
+  },
+];
+
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
@@ -64,20 +91,20 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1 rounded-md p-3  no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
           )}
           {...props}
         >
-          <div className="flex flex-row gap-2 align-top ">
-            <Image
-              src="/assets/icons/chevron-right.svg"
-              width={24}
-              height={24}
-              alt="arrow-icon"
-            />
-            <div className="flex flex-col gap-2">
-              <div className="text-sm font-medium leading-none">{title}</div>
+          <div className="flex flex-row">
+            <div className="flex flex-row align-center">
+              <Image
+                src="/assets/icons/chevron-right.svg"
+                width={24}
+                height={24}
+                alt="arrow-icon"
+              />
+              <div className="text-sm font-medium p-1">{title}</div>
               <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                 {children}
               </p>
@@ -93,7 +120,7 @@ ListItem.displayName = "ListItem";
 const Navbar = () => {
   return (
     <nav className="flex background-light900_dark200 fixed z-50 w-full navbar-gradient justify-center items-center ">
-      <div className="flex gap-5 p-6 dark:shadow-none w-full sm:px-12 max-w-[1200px] items-center justify-between ">
+      <div className="flex gap-5 md:gap-2 p-6 dark:shadow-none w-full sm:px-12 max-w-[1200px] items-center justify-between ">
         <Link href="/">
           <Image
             src="/assets/images/white_logo.svg"
@@ -102,17 +129,25 @@ const Navbar = () => {
             alt="logo"
           />
         </Link>
-        <NavigationMenu>
+        <NavigationMenu className="max-sm:hidden">
           <NavigationMenuList>
-            <NavigationMenuItem></NavigationMenuItem>
             <div className="flex justify-between w-full">
+              <NavigationMenuItem>
+                <Link href="/" legacyBehavior passHref>
+                  <NavigationMenuLink
+                    className={`${navigationMenuTriggerStyle()} text-white`}
+                  >
+                    Home
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-white">
                   Products
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="gap-3 p-4 md:w-[500px] lg:w-[350px] bg-white ">
-                    {components.map((component) => (
+                  <ul className="gap-3 p-4  w-[350px] bg-white ">
+                    {products.map((component) => (
                       <ListItem
                         key={component.title}
                         title={component.title}
@@ -129,14 +164,14 @@ const Navbar = () => {
                   Company
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-white">
-                    {components.map((component) => (
+                  <ul className="gap-3 p-4 w-[300px] bg-white">
+                    {company.map((component) => (
                       <ListItem
                         key={component.title}
                         title={component.title}
                         href={component.href}
                       >
-                        {component.description}
+                        {/* {component.description} */}
                       </ListItem>
                     ))}
                   </ul>
@@ -148,7 +183,7 @@ const Navbar = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-white">
-                    {components.map((component) => (
+                    {products.map((component) => (
                       <ListItem
                         key={component.title}
                         title={component.title}
@@ -165,21 +200,22 @@ const Navbar = () => {
                   <NavigationMenuLink
                     className={`${navigationMenuTriggerStyle()} text-white`}
                   >
-                    Service Locations
+                    Locations
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
             </div>
           </NavigationMenuList>
         </NavigationMenu>
-        <Link href="/docs">
+        <Link href="/docs" className="max-sm:hidden">
           <button
             type="button"
-            className="text-primary-500 bg-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-3xl text-sm px-6 py-2.5 text-center"
+            className="text-primary-500 bg-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-3xl text-sm px-6 py-2.5 text-center text-nowrap"
           >
             Contact Us
           </button>
         </Link>
+        <MobileNav />
       </div>
     </nav>
   );
