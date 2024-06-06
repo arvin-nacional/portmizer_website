@@ -95,3 +95,30 @@ export const services: MobileNavLinks[] = [
     title: "Trainings",
   },
 ];
+
+export const footerLinks: MobileNavLinks[] = [
+  // {
+  //   link: "/",
+  //   title: "Home",
+  // },
+  // {
+  //   link: "/about",
+  //   title: "About",
+  // },
+  {
+    link: "/products",
+    title: "Products",
+  },
+  {
+    link: "/services",
+    title: "Services",
+  },
+  {
+    link: "/locations",
+    title: "Locations",
+  },
+  {
+    link: "/contact",
+    title: "Contact",
+  },
+];
