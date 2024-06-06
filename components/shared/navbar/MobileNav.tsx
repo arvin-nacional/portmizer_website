@@ -22,7 +22,7 @@ const NavContent = () => {
   };
   return (
     <section className="flex h-full flex-col gap-2 pt-8 px-3">
-      <Link href="/" className="flex gap-2 base-semibold mb-5">
+      <Link href="/" className="flex gap-3 base-semibold mb-5">
         <Image
           src="/assets/icons/home-icon.svg"
           alt="home-icon"
@@ -34,7 +34,7 @@ const NavContent = () => {
       <div className="relative">
         <button
           onClick={() => toggleSection("products")}
-          className="flex gap-2 lg:inline-block lg:mt-0 text-dark-500 hover:text-primary-500 mr-4 base-semibold"
+          className="flex gap-3 lg:inline-block lg:mt-0 text-dark-500 hover:text-primary-500 mr-4 base-semibold"
         >
           <Image
             src="/assets/icons/products.svg"
@@ -70,7 +70,7 @@ const NavContent = () => {
       <div className="relative">
         <button
           onClick={() => toggleSection("company")}
-          className="flex gap-2 lg:inline-block lg:mt-0 text-dark-500 hover:text-primary-500 mr-4 base-semibold"
+          className="flex gap-3 lg:inline-block lg:mt-0 text-dark-500 hover:text-primary-500 mr-4 base-semibold"
         >
           <Image
             src="/assets/icons/enterprise.svg"
@@ -106,7 +106,7 @@ const NavContent = () => {
       <div className="relative">
         <button
           onClick={() => toggleSection("services")}
-          className="flex gap-2 lg:inline-block lg:mt-0 text-dark-500 hover:text-primary-500 mr-4 base-semibold"
+          className="flex gap-3 lg:inline-block lg:mt-0 text-dark-500 hover:text-primary-500 mr-4 base-semibold"
         >
           <Image
             src="/assets/icons/services.svg"
@@ -139,7 +139,7 @@ const NavContent = () => {
           )}
         </SheetClose>
       </div>
-      <Link href="/locations" className="flex gap-2 base-semibold">
+      <Link href="/locations" className="flex gap-3 base-semibold">
         {" "}
         <Image
           src="/assets/icons/port.svg"

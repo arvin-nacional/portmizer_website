@@ -16,70 +16,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import MobileNav from "./MobileNav";
-
-const products: { title: string; href: string; description: string }[] = [
-  {
-    title: "Cargotec-Kalmar",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Sumitomo Rubber Industries",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Mantsinen Mobile Harbor Crane",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Tec Container",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Actiw Loadplate",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Dafo Vehicle Fire Protection",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-];
-
-const company: { title: string; href: string; description: string }[] = [
-  {
-    title: "About",
-    href: "/about",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Gallery",
-    href: "/gallery",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "News and Updates",
-    href: "/news",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Careers",
-    href: "/careers",
-    description: "Visually or semantically separates content.",
-  },
-];
+import { company, products, services } from "@/constants";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -91,7 +28,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3  no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1 rounded-md p-3  no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground ",
             className
           )}
           {...props}
@@ -131,7 +68,7 @@ const Navbar = () => {
         </Link>
         <NavigationMenu className="max-sm:hidden">
           <NavigationMenuList>
-            <div className="flex justify-between w-full">
+            <div className="flex justify-between w-full ">
               <NavigationMenuItem>
                 <Link href="/" legacyBehavior passHref>
                   <NavigationMenuLink
@@ -145,13 +82,13 @@ const Navbar = () => {
                 <NavigationMenuTrigger className="text-white">
                   Products
                 </NavigationMenuTrigger>
-                <NavigationMenuContent>
+                <NavigationMenuContent className="">
                   <ul className="gap-3 p-4  w-[350px] bg-white ">
                     {products.map((component) => (
                       <ListItem
                         key={component.title}
                         title={component.title}
-                        href={component.href}
+                        href={component.link}
                       >
                         {/* {component.description} */}
                       </ListItem>
@@ -169,7 +106,7 @@ const Navbar = () => {
                       <ListItem
                         key={component.title}
                         title={component.title}
-                        href={component.href}
+                        href={component.link}
                       >
                         {/* {component.description} */}
                       </ListItem>
@@ -182,14 +119,14 @@ const Navbar = () => {
                   Services
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-white">
-                    {products.map((component) => (
+                  <ul className="gap-3 p-4 w-[300px] bg-white">
+                    {services.map((component) => (
                       <ListItem
                         key={component.title}
                         title={component.title}
-                        href={component.href}
+                        href={component.link}
                       >
-                        {component.description}
+                        {/* {component.description} */}
                       </ListItem>
                     ))}
                   </ul>
