@@ -15,7 +15,41 @@
   }
 
   .card-wrapper {
-    @apply bg-light-900 shadow-md;
+    position: relative;
+    background-color: white;
+    transition: box-shadow 0.3s ease;
+  }
+  .card-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom right, #32a600 50%, transparent 50%);
+    border-radius: 20;
+    box-shadow: inset 0 10px 10px -10px #32a600, inset 10px 0 10px -10px #32a600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translate(100%, -80%);
+    @apply blur-3xl;
+  }
+  .card-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom right, #32a600 50%, transparent 50%);
+    border-radius: 20;
+    box-shadow: inset 0 10px 10px -10px #32a600, inset 10px 0 10px -10px #32a600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translate(100%, 80%);
+    @apply blur-3xl;
+  }
+  .card-wrapper:hover::before {
+    opacity: 1;
+  }
+  .card-wrapper:hover::after {
+    opacity: 1;
   }
 
   .h1-bold {
@@ -107,7 +141,7 @@
     transition: background-color 0.3s ease;
   }
   .arrow-circle:hover {
-    background-image: linear-gradient(to top, #0a7a01, #45bc01);
+    background-color: #32a600;
   }
   .arrow-circle:hover .arrow-icon {
     @apply text-white;

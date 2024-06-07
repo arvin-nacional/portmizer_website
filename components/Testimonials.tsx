@@ -2,59 +2,9 @@
 import React, { useState, useEffect } from "react";
 import TestimonialCard from "./ui/testimonial-card";
 import Image from "next/image";
+import { testimonialData } from "@/constants";
 
 const Testimonials = () => {
-  const testimonialData = [
-    {
-      testimonialThumb: "/assets/images/testimonial-image2.svg",
-      testimonialText:
-        "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
-      avatarName: "John Doe",
-      avatarDesignation: "Principal Solution Architect",
-      ratings: "5",
-    },
-    {
-      testimonialThumb: "/assets/images/testimonial-image2.svg",
-      testimonialText:
-        "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
-      avatarName: "John Doe",
-      avatarDesignation: "Principal Solution Architect",
-      ratings: "5",
-    },
-    {
-      testimonialThumb: "/assets/images/testimonial-image2.svg",
-      testimonialText:
-        "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
-      avatarName: "John Doe",
-      avatarDesignation: "Principal Solution Architect",
-      ratings: "5",
-    },
-    {
-      testimonialThumb: "/assets/images/testimonial-image2.svg",
-      testimonialText:
-        "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
-      avatarName: "John Doe",
-      avatarDesignation: "Principal Solution Architect",
-      ratings: "5",
-    },
-    {
-      testimonialThumb: "/assets/images/testimonial-image2.svg",
-      testimonialText:
-        "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
-      avatarName: "John Doe",
-      avatarDesignation: "Principal Solution Architect",
-      ratings: "5",
-    },
-    {
-      testimonialThumb: "/assets/images/testimonial-image2.svg",
-      testimonialText:
-        "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
-      avatarName: "John Doe",
-      avatarDesignation: "Principal Solution Architect",
-      ratings: "5",
-    },
-  ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);
 
@@ -102,10 +52,10 @@ const Testimonials = () => {
       <div className="w-[1200px] max-w-full justify-between pb-6 max-md:mt-10">
         <div className="justify-between mb-12 flex items-end px-3">
           <div>
-            <h2 className="text-dark300_light700 text-2xl font-bold leading-7 max-md:max-w-full">
+            <h2 className="text-dark300_light700 max-sm:base-bold h2-bold font-bold leading-7 max-md:max-w-full">
               Testimonial
             </h2>
-            <h1 className="text-dark500_light700 mt-5 text-5xl font-extrabold max-md:max-w-full max-md:text-4xl">
+            <h1 className="text-dark500_light700 mt-5 max-sm:h3-bold  max-md:max-w-full max-md:text-4xl h1-bold">
               What our customer says about us
             </h1>
           </div>
@@ -140,7 +90,7 @@ const Testimonials = () => {
                 }}
               /> */}
               <div
-                className="arrow-circle w-12 h-12 cursor-pointer"
+                className="arrow-circle size-12 max-sm:size-8 cursor-pointer"
                 onClick={handlePrev}
                 style={{
                   opacity: currentIndex === 0 ? 0.5 : 1,
@@ -148,7 +98,7 @@ const Testimonials = () => {
                 }}
               >
                 <svg
-                  className="arrow-icon w-8 h-8 text-[#047500]"
+                  className="arrow-icon size-8 max-sm:size-6 text-primary-300"
                   fill="none"
                   stroke="currentColor"
                   stroke-width="2"
@@ -163,7 +113,7 @@ const Testimonials = () => {
                 </svg>
               </div>
               <div
-                className="arrow-circle w-12 h-12 cursor-pointer"
+                className="arrow-circle size-12 max-sm:size-8 cursor-pointer"
                 style={{
                   opacity:
                     currentIndex === testimonialData.length - 1 ? 0.5 : 1,
@@ -175,7 +125,7 @@ const Testimonials = () => {
                 onClick={handleNext}
               >
                 <svg
-                  className="arrow-icon w-8 h-8 text-primary-300"
+                  className="arrow-icon size-8 max-sm:size-6 text-primary-300"
                   fill="none"
                   stroke="currentColor"
                   stroke-width="2"

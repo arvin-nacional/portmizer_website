@@ -1,4 +1,4 @@
-import { MobileNavLinks, SidebarLink } from "@/types";
+import { MobileNavLinks, SidebarLink, Testimonials } from "@/types";
 
 export const sidebarLinks: SidebarLink[] = [
   {
@@ -120,5 +120,56 @@ export const footerLinks: MobileNavLinks[] = [
   {
     link: "/contact",
     title: "Contact",
+  },
+];
+
+export const testimonialData: Testimonials[] = [
+  {
+    testimonialThumb: "/assets/images/testimonial-image2.svg",
+    testimonialText:
+      "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
+    avatarName: "John Doe",
+    avatarDesignation: "Principal Solution Architect",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/assets/images/testimonial-image2.svg",
+    testimonialText:
+      "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
+    avatarName: "John Doe",
+    avatarDesignation: "Principal Solution Architect",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/assets/images/testimonial-image2.svg",
+    testimonialText:
+      "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
+    avatarName: "John Doe",
+    avatarDesignation: "Principal Solution Architect",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/assets/images/testimonial-image2.svg",
+    testimonialText:
+      "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
+    avatarName: "John Doe",
+    avatarDesignation: "Principal Solution Architect",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/assets/images/testimonial-image2.svg",
+    testimonialText:
+      "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
+    avatarName: "John Doe",
+    avatarDesignation: "Principal Solution Architect",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/assets/images/testimonial-image2.svg",
+    testimonialText:
+      "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
+    avatarName: "John Doe",
+    avatarDesignation: "Principal Solution Architect",
+    ratings: "5",
   },
 ];
