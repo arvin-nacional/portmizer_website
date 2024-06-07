@@ -1,7 +1,12 @@
+import Testimonials from "@/components/Testimonials";
 import React from "react";
 
 const Page = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Testimonials />
+    </div>
+  );
 };
 
 export default Page;

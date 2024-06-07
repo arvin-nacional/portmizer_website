@@ -15,7 +15,7 @@
   }
 
   .card-wrapper {
-    @apply bg-light-900 dark:dark-gradient shadow-light-100 dark:shadow-dark-100;
+    @apply bg-light-900 shadow-md;
   }
 
   .h1-bold {
@@ -100,5 +100,16 @@
 
   .navbar-scrolled {
     background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .arrow-circle {
+    @apply flex items-center justify-center rounded-full border-2 border-[#32A600];
+    transition: background-color 0.3s ease;
+  }
+  .arrow-circle:hover {
+    background-image: linear-gradient(to top, #0a7a01, #45bc01);
+  }
+  .arrow-circle:hover .arrow-icon {
+    @apply text-white;
   }
 }
