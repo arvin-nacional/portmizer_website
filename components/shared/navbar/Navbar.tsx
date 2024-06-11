@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import MobileNav from "./MobileNav";
 import { company, products, services } from "@/constants";
+import { Button } from "@/components/ui/button";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -59,7 +60,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 20) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -74,7 +75,7 @@ const Navbar = () => {
   return (
     <nav
       className={cn(
-        "flex fixed z-50 w-full  justify-center items-center transition-all duration-500",
+        "flex fixed z-50 w-full  justify-center items-center transition-all duration-300 ",
         scrolled ? "navbar-solid" : "navbar"
       )}
     >
@@ -170,13 +171,10 @@ const Navbar = () => {
             </div>
           </NavigationMenuList>
         </NavigationMenu>
-        <Link href="/docs" className="max-lg:hidden">
-          <button
-            type="button"
-            className="text-primary-500 bg-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-3xl text-sm px-6 py-2.5 text-center text-nowrap"
-          >
+        <Link href="/contact" className="max-lg:hidden">
+          <Button className="text-primary-500 bg-white hover:bg-gradient-to-br  focus:outline-none dark:focus:ring-green-800 font-medium rounded-3xl text-sm px-6 py-2.5 text-center text-nowrap hover:bg-white">
             Contact Us
-          </button>
+          </Button>
         </Link>
         <MobileNav />
       </div>

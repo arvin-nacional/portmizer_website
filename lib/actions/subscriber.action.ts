@@ -13,7 +13,7 @@ export async function addSubscriber(params: addSubscriberParams) {
 
     const subscriber = await Subscriber.create({ email });
     revalidatePath(path);
-    return subscriber;
+    return { subscriber };
   } catch (error) {
     console.log(error);
   }
