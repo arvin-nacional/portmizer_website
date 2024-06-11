@@ -59,17 +59,19 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true);
-      } else {
+    const checkPosition = () => {
+      if (window.scrollY === 0) {
         setScrolled(false);
+      } else {
+        setScrolled(true);
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    checkPosition(); // Initial check
+    window.addEventListener("scroll", checkPosition);
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", checkPosition);
     };
   }, []);
   return (
