@@ -11,3 +11,13 @@ export interface addContactParams {
   typeOfService: string;
   message: string;
 }
+
+export interface addCareerParams {
+  fullName: string;
+  email: string;
+  path: string;
+  contactNumber: string;
+  typeOfPosition: string;
+  message: string;
+  // resume: File;
+}

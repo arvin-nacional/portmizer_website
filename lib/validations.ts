@@ -13,3 +13,17 @@ export const ContactFormSchema = z.object({
     .regex(/^[0-9]{10,15}$/, { message: "Invalid contact number" }),
   message: z.string().min(1, { message: "Message is required" }),
 });
+
+// Define the Zod schema for a File object
+// const fileSchema = z.instanceof(File);
+
+// Define the Zod schema for the CareerFormSchema interface
+export const CareerFormSchema = z.object({
+  fullName: z.string().min(1, { message: "Fullname is required" }),
+  email: z.string().email({ message: "Invalid email address" }),
+  typeOfPosition: z.string().min(1, { message: "Type of service is required" }),
+  contactNumber: z
+    .string()
+    .regex(/^[0-9]{10,15}$/, { message: "Invalid contact number" }),
+  message: z.string().min(1, { message: "Message is required" }),
+});
