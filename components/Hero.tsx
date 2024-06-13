@@ -30,7 +30,7 @@ const Hero = () => {
         <CarouselContent>
           <CarouselItem>
             <div className="bg-[url('/assets/images/hero-img-1.svg')] bg-cover b-gcenter w-full flex justify-center items-center  max-sm:px-20 ">
-              <Card className="w-[1200px] pb-6 max-md:mt-10">
+              <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10 max-sm:gap-20">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-3xl">
                     Driving Excellence in Port and Container Handling since 1990
@@ -62,7 +62,7 @@ const Hero = () => {
           </CarouselItem>
           <CarouselItem>
             <div className="bg-[url('/assets/images/hero-img-2.svg')] bg-cover b-gcenter w-full flex justify-center items-center max-sm:px-20">
-              <Card className="w-[1200px] pb-6 max-md:mt-10">
+              <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-3xl">
                     Portmizer Philippines Corporation: <br />
@@ -70,10 +70,13 @@ const Hero = () => {
                   </h1>
 
                   <h2 className="base-medium md:w-1/2 text-light-900">
-                    At Portmizer, we don't just provide equipment—we provide
-                    peace of mind. Trust us to be your steadfast partner in
-                    driving progress and achieving operational excellence in the
-                    dynamic world of port and container handling.
+                    For more than 34 years, Portmizer Philippines Corporation
+                    has been synonymous with innovation and reliability in the
+                    shipping, stevedoring, and container yard sectors.
+                    Established in 1990, we offer a wide range of products,
+                    including Kalmar Port and Terminal Systems, Mantsinen Mobile
+                    Harbor Cranes, and Actiw Loadplate automated loading
+                    equipment, all designed to enhance operational efficiency.
                   </h2>
                   <Button className="px-8 py-7 rounded-3xl primary-gradient hover:primary-gradient2 transition-all duration-300 ease-in-out">
                     <Link
