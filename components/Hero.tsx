@@ -13,7 +13,7 @@ import {
 import { Button } from "./ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { heroServices } from "@/constants";
+import { heroServices, products } from "@/constants";
 
 const Hero = () => {
   const plugin = React.useRef(
@@ -29,7 +29,7 @@ const Hero = () => {
       >
         <CarouselContent>
           <CarouselItem>
-            <div className="bg-[url('/assets/images/hero-img-1.svg')] bg-cover b-gcenter w-full flex justify-center items-center  max-sm:px-20 ">
+            <div className="bg-[url('/assets/images/hero-img-6.svg')] bg-cover b-gcenter w-full flex justify-center items-center  max-sm:px-20 ">
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10 max-sm:gap-20">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-3xl">
@@ -113,6 +113,57 @@ const Hero = () => {
                   <h2 className="base-bold text-light-900">Our Services</h2>
                   <div className="flex flex-col gap-3 text-light-900">
                     {heroServices.map((component) => (
+                      <Link
+                        className="flex gap-3"
+                        href={component.link}
+                        key={component.title}
+                      >
+                        <Image
+                          src="/assets/icons/chevron-right-white.svg"
+                          alt="arrow-right"
+                          width={24}
+                          height={24}
+                        />
+                        <h3>{component.title}</h3>
+                      </Link>
+                    ))}
+                  </div>
+                  <Button className="px-8 py-7 rounded-3xl primary-gradient hover:primary-gradient2 transition-all duration-300 ease-in-out">
+                    <Link
+                      href="/contact"
+                      className="base-medium flex gap-2 items-center"
+                    >
+                      <Image
+                        src="/assets/icons/arrow-right-btn.svg"
+                        alt="arrow-right"
+                        width={24}
+                        height={24}
+                      />
+                      Ask a free consult
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
+          </CarouselItem>
+
+          <CarouselItem>
+            <div className="bg-[url('/assets/images/hero-img-5.svg')] bg-cover b-gcenter w-full flex justify-center items-center max-sm:px-20">
+              <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
+                <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
+                  <h1 className="text-5xl font-semibold text-light-900 max-sm:text-3xl">
+                    Transform Your Port Operations with Cutting-Edge Solutions
+                  </h1>
+
+                  {/* <h2 className="base-medium md:w-3/4 text-light-900">
+                    At Portmizer Philippines Corporation, we are dedicated to
+                    revolutionizing the shipping, stevedoring, and container
+                    yard industries with our exceptional range of products.
+                  </h2> */}
+
+                  <h2 className="base-bold text-light-900">Our Products</h2>
+                  <div className="flex flex-col gap-3 text-light-900">
+                    {products.map((component) => (
                       <Link className="flex gap-3" href={component.link}>
                         <Image
                           src="/assets/icons/chevron-right-white.svg"

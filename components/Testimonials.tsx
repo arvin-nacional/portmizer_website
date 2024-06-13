@@ -101,13 +101,13 @@ const Testimonials = () => {
                   className="arrow-icon size-8 max-sm:size-6 text-primary-300"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M19 12H5M12 19l-7-7 7-7"
                   ></path>
                 </svg>
