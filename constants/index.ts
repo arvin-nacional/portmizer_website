@@ -173,3 +173,26 @@ export const testimonialData: Testimonials[] = [
     ratings: "5",
   },
 ];
+
+export const heroServices: MobileNavLinks[] = [
+  {
+    link: "/services/genuine-spare-parts",
+    title: "Genuine Spare Parts",
+  },
+  {
+    link: "/services/preventive-maintenance",
+    title: "Preventive Maintenance",
+  },
+  {
+    link: "/services/performance-upgrade",
+    title: "Performance Upgrade",
+  },
+  {
+    link: "/services/conversions-overhauling",
+    title: "Conversions and Overhauling",
+  },
+  {
+    link: "/services/training",
+    title: "Trainings",
+  },
+];

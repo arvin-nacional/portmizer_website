@@ -9,6 +9,9 @@
   .primary-gradient {
     background: linear-gradient(129deg, #0a7a01 10%, #45bc01 100%);
   }
+  .primary-gradient2 {
+    background: linear-gradient(270deg, #0a7a01 10%, #45bc01 100%);
+  }
 
   .navbar-solid {
     background-color: #32a600;
