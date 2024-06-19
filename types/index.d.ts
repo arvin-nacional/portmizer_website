@@ -16,3 +16,15 @@ export interface Testimonials {
   avatarDesignation: string;
   ratings: string;
 }
+
+interface coreValuesProps {
+  image: string;
+  title: string;
+  caption: string;
+}
+interface ProductCardProps {
+  image: string;
+  title: string;
+  caption: string;
+  link: string;
+}

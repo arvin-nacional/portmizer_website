@@ -1,11 +1,16 @@
+import CoreValues from "@/components/CoreValues";
 import Hero from "@/components/Hero";
+import HomeAbout from "@/components/HomeAbout";
+import HomeProducts from "@/components/HomeProducts";
 import Testimonials from "@/components/Testimonials";
-import React from "react";
 
 const Page = () => {
   return (
     <div>
       <Hero />
+      <CoreValues />
+      <HomeAbout />
+      <HomeProducts />
       <Testimonials />
     </div>
   );

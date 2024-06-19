@@ -61,34 +61,6 @@ const Testimonials = () => {
           </div>
           <div className="flex items-end justify-end">
             <div className="mt-12 flex flex-row justify-end gap-5">
-              {/* <Image
-                className="size-[43px] min-h-[43px] cursor-pointer"
-                alt="left-button"
-                height={43}
-                width={43}
-                src={"/assets/icons/arrow-btn-left.svg"}
-                onClick={handlePrev}
-                style={{
-                  opacity: currentIndex === 0 ? 0.5 : 1,
-                  pointerEvents: currentIndex === 0 ? "none" : "auto",
-                }}
-              /> */}
-              {/* <Image
-                className="size-[43px] min-h-[43px] cursor-pointer"
-                alt="right-button"
-                height={43}
-                width={43}
-                src={"/assets/icons/arrow-btn-right.svg"}
-                onClick={handleNext}
-                style={{
-                  opacity:
-                    currentIndex === testimonialData.length - 1 ? 0.5 : 1,
-                  pointerEvents:
-                    currentIndex === testimonialData.length - 1
-                      ? "none"
-                      : "auto",
-                }}
-              /> */}
               <div
                 className="arrow-circle size-12 max-sm:size-8 cursor-pointer"
                 onClick={handlePrev}
