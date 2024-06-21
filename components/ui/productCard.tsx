@@ -13,8 +13,8 @@ const ProductCard = ({ image, title, caption, link }: ProductCardProps) => {
           width={0}
           height={0}
           sizes="100vw"
-          style={{ width: "100%", height: "auto" }}
-          className="rounded-2xl"
+          style={{ width: "100%", height: "180px", objectFit: "cover" }}
+          className="rounded-2xl bg-cover"
         />
         <p className="h2-bold mt-10">{title}</p>
         <p className="mt-10">{caption}</p>

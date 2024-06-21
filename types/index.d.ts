@@ -28,3 +28,8 @@ interface ProductCardProps {
   caption: string;
   link: string;
 }
+
+interface LogoProps {
+  src: string;
+  alt: string;
+}

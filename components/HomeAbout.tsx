@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const HomeAbout = () => {
   return (
-    <section className="background-light400_dark300 flex items-center justify-center px-16 py-20 max-sm:py-5 max-md:px-5 sm:px-14 bg-gray-100">
+    <section className="flex items-center justify-center px-16 py-20 max-sm:py-5 max-md:px-5 sm:px-14 bg-gray-100">
       <div className="w-[1200px] max-w-full grid grid-cols-3 pb-6 max-md:mt-10 gap-10 max-sm:grid-cols-1 align-top px-2">
         <div>
           <h3 className="h2-bold text-dark-500 mb-2">About Us</h3>

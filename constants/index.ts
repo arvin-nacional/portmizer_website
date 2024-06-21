@@ -1,4 +1,5 @@
 import {
+  LogoProps,
   MobileNavLinks,
   ProductCardProps,
   SidebarLink,
@@ -231,47 +232,177 @@ export const coreValues: coreValuesProps[] = [
   },
 ];
 
+export const missionObjectives: coreValuesProps[] = [
+  {
+    image: "/assets/icons/goals1.svg",
+    title: "Mission",
+    caption:
+      "At Portmizer Philippines Corporation, our mission is to deliver unparalleled quality and reliability in container and bulk handling solutions. We strive to exceed expectations by providing innovative equipment, genuine spare parts, and exceptional service to our global clientele.",
+  },
+  {
+    image: "/assets/icons/goals2.svg",
+    title: "Vision",
+    caption:
+      "Our vision is to be the preferred partner in the maritime and industrial sectors, recognized for our commitment to excellence, sustainability, and customer satisfaction. We aim to continuously innovate and expand our capabilities to meet the evolving needs of the industries we serve.",
+  },
+];
+
 export const productsCard: ProductCardProps[] = [
   {
     link: "/products/cargotec-kalmar",
     title: "Kalmar Port and Terminal System",
     caption:
       "Kalmar offers a wide range of cargo handling solutions and services to ports, terminals, distribution centres and to heavy industry.",
-    image: "/assets/images/home-product-image1.svg",
+    image: "/assets/images/home-product-kalmar.jpg",
   },
   {
     link: "/products/sumitomo",
     title: "Sumitomo Rubber Industries",
     caption:
-      "Kalmar offers a wide range of cargo handling solutions and services to ports, terminals, distribution centres and to heavy industry.",
-    image: "/assets/images/home-product-image1.svg",
+      "Sumitomo Rubber Industry is the world's top rubber fender producer, meeting global needs with advanced technology and high quality.",
+    image: "/assets/images/home-product-sumitomo.jpg",
   },
   {
     link: "/products/mantsinen",
     title: "Mantsinen Mobile Harbor Crane",
     caption:
-      "Kalmar offers a wide range of cargo handling solutions and services to ports, terminals, distribution centres and to heavy industry.",
-    image: "/assets/images/home-product-image1.svg",
+      "Mantsinen provides a wide range of hydraulic material handlers and complementing attachments.",
+    image: "/assets/images/home-products-mantsinen.jpg",
   },
   {
     link: "/products/tec-container",
     title: "Tec Container",
     caption:
-      "Kalmar offers a wide range of cargo handling solutions and services to ports, terminals, distribution centres and to heavy industry.",
-    image: "/assets/images/home-product-image1.svg",
+      "A market leader in the design and production of container unloading, container handling and general cargo equipment in terminals and ports.",
+    image: "/assets/images/home-product-tecContainer.jpg",
   },
   {
     link: "/products/actiw-loadplate",
     title: "Actiw Loadplate",
     caption:
       "Kalmar offers a wide range of cargo handling solutions and services to ports, terminals, distribution centres and to heavy industry.",
-    image: "/assets/images/home-product-image1.svg",
+    image: "/assets/images/home-product-actiw.jpg",
   },
   {
     link: "/products/dafo",
     title: "Dafo Vehicle Fire Protection",
     caption:
-      "Kalmar offers a wide range of cargo handling solutions and services to ports, terminals, distribution centres and to heavy industry.",
-    image: "/assets/images/home-product-image1.svg",
+      "Dafo offers complete extinguishing systems for heavy vehicles, ships, and buses, providing fast and effective fire protection.",
+    image: "/assets/images/home-product-dafo.jpg",
+  },
+];
+
+export const servicesCard: ProductCardProps[] = [
+  {
+    link: "/services/genuine-spare-parts",
+    title: "Genuine Spare Parts",
+    caption:
+      "Supplying authentic spare parts for optimal equipment performance.",
+    image: "/assets/images/services1.svg",
+  },
+  {
+    link: "/services/preventive-maintenance",
+    title: "Preventive Maintenance",
+    caption:
+      "Ensuring equipment longevity and reliability through preventive maintenance.",
+    image: "/assets/images/services2.svg",
+  },
+  {
+    link: "/services/performance-upgrade",
+    title: "Performance Upgrade",
+    caption:
+      "Enhancing equipment efficiency with targeted performance upgrades.",
+    image: "/assets/images/services3.svg",
+  },
+  {
+    link: "/services/conversions-overhauling",
+    title: "Conversions and Overhauling",
+    caption:
+      "Transforming and overhauling equipment for improved functionality.",
+    image: "/assets/images/services4.svg",
+  },
+  {
+    link: "/services/training",
+    title: "Trainings",
+    caption:
+      "Providing expert training programs for safe and efficient equipment operation.",
+    image: "/assets/images/services5.svg",
+  },
+];
+
+export const clientLogo: LogoProps[] = [
+  {
+    src: "/assets/logo/0.svg",
+    alt: "client 1",
+  },
+  {
+    src: "/assets/logo/1.svg",
+    alt: "client 1",
+  },
+  {
+    src: "/assets/logo/2.svg",
+    alt: "client 1",
+  },
+  {
+    src: "/assets/logo/3.svg",
+    alt: "client 1",
+  },
+  {
+    src: "/assets/logo/4.svg",
+    alt: "client 1",
+  },
+  {
+    src: "/assets/logo/5.svg",
+    alt: "client 1",
+  },
+  {
+    src: "/assets/logo/6.svg",
+    alt: "client 1",
+  },
+  {
+    src: "/assets/logo/7.svg",
+    alt: "client 1",
+  },
+  {
+    src: "/assets/logo/8.svg",
+    alt: "client 1",
+  },
+  {
+    src: "/assets/logo/9.svg",
+    alt: "client 1",
+  },
+  {
+    src: "/assets/logo/10.svg",
+    alt: "client 1",
+  },
+  {
+    src: "/assets/logo/11.svg",
+    alt: "client 1",
+  },
+];
+export const partnerLogo: LogoProps[] = [
+  {
+    src: "/assets/logo/partner-logo-1.svg",
+    alt: "Kalmar",
+  },
+  {
+    src: "/assets/logo/partner-logo-2.svg",
+    alt: "Sumitomo Rubber Industries",
+  },
+  {
+    src: "/assets/logo/partner-logo-3.svg",
+    alt: "TEC Container",
+  },
+  {
+    src: "/assets/logo/partner-logo-4.svg",
+    alt: "Dafo vehicle fire protection",
+  },
+  {
+    src: "/assets/logo/partner-logo-5.svg",
+    alt: "Actiw",
+  },
+  {
+    src: "/assets/logo/partner-logo-6.svg",
+    alt: "Mantsinen",
   },
 ];
