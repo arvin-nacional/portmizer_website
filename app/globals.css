@@ -13,6 +13,10 @@
     background: linear-gradient(270deg, #0a7a01 10%, #45bc01 100%);
   }
 
+  .cta-gradient {
+    background: linear-gradient(180deg, #ebfcea 0%, #fcfdfe 100%);
+  }
+
   .navbar-solid {
     background-color: #32a600;
   }

@@ -96,15 +96,15 @@ const Hero = () => {
             <div className="bg-[url('/assets/images/hero-img-4.svg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-20">
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
-                  <h1 className="text-5xl font-semibold text-light-900 max-sm:text-3xl">
+                  <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
                     Only the Best for the Customers
                   </h1>
 
-                  <h2 className="base-medium md:w-1/2 text-light-900 max-sm:paragraph-regular">
+                  {/* <h2 className="base-medium md:w-1/2 text-light-900 max-sm:paragraph-regular">
                     We pursue mutually-beneficial relationship with customers,
                     co-workers, shareholders and communities on a long-term
                     basis.
-                  </h2>
+                  </h2> */}
 
                   <h2 className="base-bold text-light-900">Our Services</h2>
                   <div className="flex flex-col gap-3 text-light-900">
@@ -147,7 +147,7 @@ const Hero = () => {
             <div className="bg-[url('/assets/images/hero-img-5.svg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-20">
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
-                  <h1 className="text-5xl font-semibold text-light-900 max-sm:text-3xl">
+                  <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
                     Transform Your Port Operations with Cutting-Edge Solutions
                   </h1>
 

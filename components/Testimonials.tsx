@@ -2,9 +2,15 @@
 import React, { useState, useEffect } from "react";
 import TestimonialCard from "./ui/testimonial-card";
 import Image from "next/image";
-import { testimonialData } from "@/constants";
+import { TestimonialsProps } from "@/types";
 
-const Testimonials = () => {
+interface Props {
+  title: string;
+  caption: string;
+  data: TestimonialsProps[];
+}
+
+const Testimonials = ({ title, caption, data }: Props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);
 
@@ -28,35 +34,35 @@ const Testimonials = () => {
   //   useEffect(() => {
   //     const interval = setInterval(() => {
   //       setCurrentIndex((prevIndex) =>
-  //         prevIndex >= testimonialData.length - 1 ? 0 : prevIndex + 1
+  //         prevIndex >= data.length - 1 ? 0 : prevIndex + 1
   //       );
   //     }, 3000);
 
   //     return () => clearInterval(interval);
-  //   }, [currentIndex, testimonialData.length]);
+  //   }, [currentIndex, data.length]);
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonialData.length - 1 : prevIndex - 1
+      prevIndex === 0 ? data.length - 1 : prevIndex - 1
     );
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex >= testimonialData.length - 3 ? 0 : prevIndex + 1
+      prevIndex >= data.length - 3 ? 0 : prevIndex + 1
     );
   };
 
   return (
-    <section className="background-light400_dark300 flex items-center justify-center px-16 py-20 max-md:px-5 sm:px-14">
+    <section className="background-light400_dark300 flex items-center justify-center px-16 py-10 max-md:px-5 sm:px-14">
       <div className="w-[1200px] max-w-full justify-between pb-6 max-md:mt-10">
         <div className="justify-between mb-12 flex items-end px-3">
           <div>
             <h2 className="text-dark300_light700 max-sm:base-bold h2-bold font-bold leading-7 max-md:max-w-full">
-              Testimonial
+              {title}
             </h2>
             <h1 className="text-dark500_light700 mt-5 max-sm:h3-bold  max-md:max-w-full max-md:text-4xl h1-bold">
-              What our customer says about us
+              {caption}
             </h1>
           </div>
           <div className="flex items-end justify-end">
@@ -87,12 +93,9 @@ const Testimonials = () => {
               <div
                 className="arrow-circle size-12 max-sm:size-8 cursor-pointer"
                 style={{
-                  opacity:
-                    currentIndex === testimonialData.length - 1 ? 0.5 : 1,
+                  opacity: currentIndex === data.length - 1 ? 0.5 : 1,
                   pointerEvents:
-                    currentIndex === testimonialData.length - 1
-                      ? "none"
-                      : "auto",
+                    currentIndex === data.length - 1 ? "none" : "auto",
                 }}
                 onClick={handleNext}
               >
@@ -118,13 +121,11 @@ const Testimonials = () => {
           <div
             className="flex transition-transform duration-500"
             style={{
-              transform: `translateX(-${
-                (currentIndex / testimonialData.length) * 100
-              }%)`,
-              width: `${(testimonialData.length / itemsPerPage) * 100}%`,
+              transform: `translateX(-${(currentIndex / data.length) * 100}%)`,
+              width: `${(data.length / itemsPerPage) * 100}%`,
             }}
           >
-            {testimonialData.map((item, index) => (
+            {data.map((item, index) => (
               <div key={index} className="w-full px-2 md:w-1/2 lg:w-1/3">
                 <TestimonialCard
                   image={item.testimonialThumb}

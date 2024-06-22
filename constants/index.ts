@@ -1,9 +1,12 @@
 import {
+  CareerOpeningsProps,
+  HiringProcessProps,
+  LocationProps,
   LogoProps,
   MobileNavLinks,
   ProductCardProps,
   SidebarLink,
-  Testimonials,
+  TestimonialsProps,
   coreValuesProps,
 } from "@/types";
 import image from "next/image";
@@ -78,7 +81,7 @@ export const company: MobileNavLinks[] = [
     title: "News and Updates",
   },
   {
-    link: "/company/Careers",
+    link: "/company/careers",
     title: "Careers",
   },
 ];
@@ -132,7 +135,7 @@ export const footerLinks: MobileNavLinks[] = [
   },
 ];
 
-export const testimonialData: Testimonials[] = [
+export const testimonialData: TestimonialsProps[] = [
   {
     testimonialThumb: "/assets/images/testimonial-image2.svg",
     testimonialText:
@@ -179,6 +182,56 @@ export const testimonialData: Testimonials[] = [
       "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
     avatarName: "John Doe",
     avatarDesignation: "Principal Solution Architect",
+    ratings: "5",
+  },
+];
+export const employeeTestimonialData: TestimonialsProps[] = [
+  {
+    testimonialThumb: "/assets/images/employee-boy-1.svg",
+    testimonialText:
+      "Working at Portmizer Philippines Corporation has been an incredible journey. The company’s commitment to innovation and quality inspires me every day. I’m proud to be part of a team that values excellence and customer satisfaction.",
+    avatarName: "John D.",
+    avatarDesignation: "Service Technician",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/assets/images/employee-girl-2.svg",
+    testimonialText:
+      "Portmizer Philippines Corporation is a fantastic place to work. The supportive environment and opportunities for professional growth have been outstanding. I feel valued and motivated to contribute to our shared success.",
+    avatarName: "Maria S.",
+    avatarDesignation: "Sales Manager",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/assets/images/employee-boy-2.svg",
+    testimonialText:
+      "I have been with Portmizer for over a decade, and it’s been a rewarding experience. The company’s dedication to its employees’ well-being and career advancement is truly commendable. It’s a place where you can thrive and make a real impact.",
+    avatarName: "Carlos R.",
+    avatarDesignation: "Operations Supervisor",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/assets/images/employee-girl-1.svg",
+    testimonialText:
+      "Joining Portmizer Philippines Corporation has been one of the best decisions of my career. The collaborative culture and focus on innovation create an exciting and dynamic work environment. I’m grateful for the chance to grow and develop my skills here.",
+    avatarName: "Angela M.",
+    avatarDesignation: " Marketing Specialist",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/assets/images/employee-boy-3.svg",
+    testimonialText:
+      "At Portmizer, I feel like part of a family. The company’s emphasis on safety and professional development ensures that we can perform our jobs with confidence. It’s a great place to build a fulfilling career.",
+    avatarName: "Henry L.",
+    avatarDesignation: "Crane Operator",
+    ratings: "5",
+  },
+  {
+    testimonialThumb: "/assets/images/employee-girl-3.svg",
+    testimonialText:
+      "Portmizer Philippines Corporation genuinely cares about its employees. The positive work culture and continuous learning opportunities make it a pleasure to come to work every day. I’m proud to be part of a team that values and supports its members.",
+    avatarName: "Nina G.",
+    avatarDesignation: "Human Resources Manager",
     ratings: "5",
   },
 ];
@@ -404,5 +457,71 @@ export const partnerLogo: LogoProps[] = [
   {
     src: "/assets/logo/partner-logo-6.svg",
     alt: "Mantsinen",
+  },
+];
+
+export const careerOpenings: CareerOpeningsProps[] = [
+  {
+    title: "Admin and Finance Department",
+    caption:
+      "Manages financial operations and administrative tasks. Roles include accountants, financial analysts, and office managers, focusing on budget management, financial reporting, and payroll processing.",
+  },
+  {
+    title: "Service Department",
+    caption:
+      "Provides customer support and maintenance. Roles include customer service reps and technical support specialists, focusing on troubleshooting, resolving complaints, and ensuring customer satisfaction.",
+  },
+  {
+    title: "Sales Derpartment",
+    caption:
+      "Drives revenue through selling products or services. Roles include sales reps and account managers, focusing on identifying potential clients, building relationships, and meeting sales targets.",
+  },
+];
+
+export const hiringProcess: HiringProcessProps[] = [
+  {
+    image: "/assets/icons/hiringProcess.svg",
+    title: "Assessment",
+    caption:
+      "Discover your fit. Our assessments reveal your strengths and match you with the perfect role. Let's unlock your potential together.",
+  },
+  {
+    image: "/assets/icons/hiringProcess.svg",
+    title: "Interview",
+    caption:
+      "Discover your fit. Our assessments reveal your strengths and match you with the perfect role. Let's unlock your potential together.",
+  },
+  {
+    image: "/assets/icons/hiringProcess.svg",
+    title: "Get Hired!",
+    caption:
+      "Discover your fit. Our assessments reveal your strengths and match you with the perfect role. Let's unlock your potential together.",
+  },
+];
+
+export const locations: LocationProps[] = [
+  {
+    location: "Manila",
+    address:
+      "Rm. 117 Mercantile Insurance Bldg. Gen. Luna St. corner Beaterio, St. Intramuros, Manila 1002",
+    number: "02-85245514",
+  },
+  {
+    location: "Cebu",
+    address:
+      "#7 Door 2B Arayat Apartment Mt. Arayat St. Singson Village Brgy Tipolo Mandaue City",
+    number: "02-85245514",
+  },
+  {
+    location: "Laguna",
+    address:
+      "Ma. Leonora Subd., #01 Orchids St. Brgy. Mayapa, Canlubang, Calamba City, Laguna 4028  (corner of Sampaguita St. and Orchids St.)",
+    number: "+63 49303 9502",
+  },
+  {
+    location: "Davao",
+    address:
+      "Door-3 PGJ REALTY, Km. 8 Agusan National Highway, Brgy. Vicente Hizon Sr., Buhangin District, Davao City 8000",
+    number: "+63 82 234 6284",
   },
 ];

@@ -35,8 +35,8 @@ const TestimonialCard = ({ image, name, designation, rating, text }: Props) => {
             className="relative size-16 object-cover"
             loading="lazy"
             alt=""
-            width={24}
-            height={24}
+            width={25}
+            height={25}
             src={image}
           />
           <div className="flex flex-col items-start justify-start px-0 pb-0 pt-[8.5px]">

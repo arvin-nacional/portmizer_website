@@ -9,7 +9,7 @@ export interface MobileNavLinks {
   title: string;
 }
 
-export interface Testimonials {
+export interface TestimonialsProps {
   testimonialThumb: string;
   testimonialText: string;
   avatarName: string;
@@ -32,4 +32,20 @@ interface ProductCardProps {
 interface LogoProps {
   src: string;
   alt: string;
+}
+
+interface CareerOpeningsProps {
+  title: string;
+  caption: string;
+}
+
+interface HiringProcessProps {
+  title: string;
+  caption: string;
+  image: string;
+}
+interface LocationProps {
+  location: string;
+  address: string;
+  number: string;
 }

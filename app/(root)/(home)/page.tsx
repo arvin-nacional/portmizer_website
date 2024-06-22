@@ -6,6 +6,8 @@ import HomeProducts from "@/components/HomeProducts";
 import HomeServices from "@/components/HomeServices";
 import Partners from "@/components/Partners";
 import Testimonials from "@/components/Testimonials";
+import CTA from "@/components/shared/CTA";
+import { testimonialData } from "@/constants";
 
 const Page = () => {
   return (
@@ -17,7 +19,16 @@ const Page = () => {
       <HomeServices />
       <Clients />
       <Partners />
-      <Testimonials />
+      <Testimonials
+        title="Testimonial"
+        caption="What our customer says about us"
+        data={testimonialData}
+      />
+      <CTA
+        title="Want to know more about our Products and Services?"
+        action="Ask for a free consult"
+        link="/contact"
+      />
     </div>
   );
 };

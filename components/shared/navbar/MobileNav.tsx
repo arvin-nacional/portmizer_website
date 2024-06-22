@@ -34,10 +34,10 @@ const NavContent = () => {
         </Link>
       </SheetClose>
 
-      <div className="relative pb-4">
+      <div className="relative pb-4 ">
         <button
           onClick={() => toggleSection("products")}
-          className="flex gap-3 lg:inline-block lg:mt-0 text-dark-500 hover:text-primary-500 mr-4 base-semibold"
+          className="flex gap-3 lg:inline-block lg:mt-0 text-dark-500 hover:text-primary-500 mr-4 base-semibold focus:outline-none"
         >
           <Image
             src="/assets/icons/products.svg"
@@ -145,7 +145,7 @@ const NavContent = () => {
           </div>
         )}
       </div>
-      <Link href="/locations" className="flex gap-3 base-semibold">
+      <Link href="/location" className="flex gap-3 base-semibold">
         {" "}
         <Image
           src="/assets/icons/port.svg"
