@@ -22,16 +22,19 @@ const NavContent = () => {
   };
   return (
     <section className="flex h-full flex-col gap-2 pt-8 px-3">
-      <Link href="/" className="flex gap-3 base-semibold mb-5">
-        <Image
-          src="/assets/icons/home-icon.svg"
-          alt="home-icon"
-          width={24}
-          height={24}
-        />
-        Home
-      </Link>
-      <div className="relative">
+      <SheetClose asChild>
+        <Link href="/" className="flex gap-3 base-semibold mb-5">
+          <Image
+            src="/assets/icons/home-icon.svg"
+            alt="home-icon"
+            width={24}
+            height={24}
+          />
+          Home
+        </Link>
+      </SheetClose>
+
+      <div className="relative pb-4">
         <button
           onClick={() => toggleSection("products")}
           className="flex gap-3 lg:inline-block lg:mt-0 text-dark-500 hover:text-primary-500 mr-4 base-semibold"
@@ -44,30 +47,31 @@ const NavContent = () => {
           />
           Products
         </button>
-        <SheetClose>
-          {openSection === "products" && (
-            <div className=" flex flex-col text-dark-500 mt-2 py-3 mb-2 w-full shadow-lg lg:absolute z-10 items-start rounded-lg">
-              {products.map((product) => (
-                <div
-                  className="flex flex-row px-3 mt-2 items-start justify-start text-left"
-                  key={product.title}
-                >
-                  <Image
-                    src="/assets/icons/chevron-right.svg"
-                    width={24}
-                    height={24}
-                    alt="arrow-icon"
-                  />
-                  <Link href={product.link} className=" hover:bg-gray-600">
+        {openSection === "products" && (
+          <div className=" flex flex-col text-dark-500 mt-2 py-3 mb-2 w-full shadow-lg lg:absolute z-10 items-start rounded-lg">
+            {products.map((product) => (
+              <SheetClose asChild key={product.link}>
+                <Link href={product.link} className=" hover:bg-gray-600">
+                  <div
+                    className="flex flex-row px-3 mt-2 items-start justify-start text-left"
+                    key={product.title}
+                  >
+                    <Image
+                      src="/assets/icons/chevron-right.svg"
+                      width={24}
+                      height={24}
+                      alt="arrow-icon"
+                    />
+
                     {product.title}
-                  </Link>
-                </div>
-              ))}
-            </div>
-          )}
-        </SheetClose>
+                  </div>
+                </Link>
+              </SheetClose>
+            ))}
+          </div>
+        )}
       </div>
-      <div className="relative">
+      <div className="relative pb-4">
         <button
           onClick={() => toggleSection("company")}
           className="flex gap-3 lg:inline-block lg:mt-0 text-dark-500 hover:text-primary-500 mr-4 base-semibold"
@@ -80,30 +84,31 @@ const NavContent = () => {
           />
           Company
         </button>
-        <SheetClose>
-          {openSection === "company" && (
-            <div className=" flex flex-col text-dark-500 mt-2 py-3 mb-2 w-full shadow-lg lg:absolute z-10 items-start rounded-lg">
-              {company.map((item) => (
-                <div
-                  className="flex flex-row px-3 mt-2 items-start justify-start text-left"
-                  key={item.title}
-                >
-                  <Image
-                    src="/assets/icons/chevron-right.svg"
-                    width={24}
-                    height={24}
-                    alt="arrow-icon"
-                  />
-                  <Link href={item.link} className=" hover:bg-gray-600">
+        {openSection === "company" && (
+          <div className=" flex flex-col text-dark-500 mt-2 py-3 mb-2 w-full shadow-lg lg:absolute z-10 items-start rounded-lg">
+            {company.map((item) => (
+              <SheetClose asChild key={item.link}>
+                <Link href={item.link} className=" hover:bg-gray-600">
+                  <div
+                    className="flex flex-row px-3 mt-2 items-start justify-start text-left"
+                    key={item.title}
+                  >
+                    <Image
+                      src="/assets/icons/chevron-right.svg"
+                      width={24}
+                      height={24}
+                      alt="arrow-icon"
+                    />
+
                     {item.title}
-                  </Link>
-                </div>
-              ))}
-            </div>
-          )}
-        </SheetClose>
+                  </div>
+                </Link>
+              </SheetClose>
+            ))}
+          </div>
+        )}
       </div>
-      <div className="relative">
+      <div className="relative pb-4">
         <button
           onClick={() => toggleSection("services")}
           className="flex gap-3 lg:inline-block lg:mt-0 text-dark-500 hover:text-primary-500 mr-4 base-semibold"
@@ -116,28 +121,29 @@ const NavContent = () => {
           />
           Services
         </button>
-        <SheetClose>
-          {openSection === "services" && (
-            <div className=" flex flex-col text-dark-500 mt-2 py-3 mb-2 w-full shadow-lg lg:absolute z-10 items-start rounded-lg">
-              {services.map((item) => (
-                <div
-                  className="flex flex-row px-3 mt-2 items-start justify-start text-left"
-                  key={item.title}
-                >
-                  <Image
-                    src="/assets/icons/chevron-right.svg"
-                    width={24}
-                    height={24}
-                    alt="arrow-icon"
-                  />
-                  <Link href={item.link} className=" hover:bg-gray-600">
+        {openSection === "services" && (
+          <div className=" flex flex-col text-dark-500 mt-2 py-3 mb-2 w-full shadow-lg lg:absolute z-10 items-start rounded-lg">
+            {services.map((item) => (
+              <SheetClose asChild key={item.link}>
+                <Link href={item.link} className=" hover:bg-gray-600">
+                  <div
+                    className="flex flex-row px-3 mt-2 items-start justify-start text-left"
+                    key={item.title}
+                  >
+                    <Image
+                      src="/assets/icons/chevron-right.svg"
+                      width={24}
+                      height={24}
+                      alt="arrow-icon"
+                    />
+
                     {item.title}
-                  </Link>
-                </div>
-              ))}
-            </div>
-          )}
-        </SheetClose>
+                  </div>
+                </Link>
+              </SheetClose>
+            ))}
+          </div>
+        )}
       </div>
       <Link href="/locations" className="flex gap-3 base-semibold">
         {" "}
