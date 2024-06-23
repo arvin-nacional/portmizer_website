@@ -1,5 +1,6 @@
 import {
   CareerOpeningsProps,
+  GalleryImages,
   HiringProcessProps,
   LocationProps,
   LogoProps,
@@ -523,5 +524,88 @@ export const locations: LocationProps[] = [
     address:
       "Door-3 PGJ REALTY, Km. 8 Agusan National Highway, Brgy. Vicente Hizon Sr., Buhangin District, Davao City 8000",
     number: "+63 82 234 6284",
+  },
+];
+
+export const galleryImages: GalleryImages[] = [
+  {
+    src: "/assets/images/gallery/1.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/2.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/3.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/4.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/5.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/6.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/7.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/8.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/9.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/10.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/11.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/12.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/13.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/14.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/15.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/16.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/17.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/18.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/19.jpg",
+    alt: "Gallery Image",
+  },
+  {
+    src: "/assets/images/gallery/20.jpg",
+    alt: "Gallery Image",
   },
 ];

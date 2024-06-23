@@ -49,3 +49,8 @@ interface LocationProps {
   address: string;
   number: string;
 }
+
+interface GalleryImages {
+  src: string;
+  alt: string;
+}

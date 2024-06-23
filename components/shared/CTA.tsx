@@ -61,7 +61,7 @@ const CTA = ({ title, action, link }: Props) => {
             alt="plus"
             height={44}
             width={25}
-            className="absolute right-[100px] bottom-8"
+            className="absolute right-[60px] bottom-8"
           />
           <Image
             src="/assets/icons/plus.svg"

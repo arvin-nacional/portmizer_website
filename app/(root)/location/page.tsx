@@ -53,8 +53,40 @@ const Page = () => {
               />
             ))}
           </div>
+          <div className="flex justify-center items-start gap-20 mt-20 max-sm:flex-col">
+            <div>
+              <h4 className="h2-bold">Telephone Numbers</h4>
+              <div className="h-[7px] w-[120px] primary-gradient mt-3"></div>
+              <p className="paragraph-medium mt-5">8524-5514</p>
+              <p className="paragraph-medium mt-5">Local</p>
+              <ul>
+                <li>
+                  <p className="paragraph-medium mt-2">200 - Admin</p>
+                  <p className="paragraph-medium mt-2">201 - HR</p>
+                  <p className="paragraph-medium mt-2">202 - Service</p>
+                  <p className="paragraph-medium mt-2">203 - Sales</p>
+                  <p className="paragraph-medium mt-2">204 - SCL</p>
+                  <p className="paragraph-medium mt-2">205 - Executive</p>
+                  <p className="paragraph-medium mt-2">206 - Conference Room</p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="h2-bold">Email Addresses</h4>
+              <div className="h-[7px] w-[120px] primary-gradient mt-3"></div>
+              <ul className="mt-5">
+                <li>
+                  <p className="paragraph-medium mt-2">info@portmizer.com</p>
+                  <p className="paragraph-medium mt-2">admin@portmizer.com</p>
+                  <p className="paragraph-medium mt-2">hr@portmizer.com</p>
+                  <p className="paragraph-medium mt-2">kparts@portmizer.com</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
+
       <CTA
         title="Want to know more about our products?"
         action="Ask for a free consult"

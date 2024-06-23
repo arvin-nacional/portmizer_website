@@ -21,6 +21,7 @@
     "embla-carousel-autoplay": "^8.1.5",
     "embla-carousel-react": "^8.1.5",
     "epic-spinners": "^2.0.0",
+    "lightgallery": "^2.7.2",
     "lucide-react": "^0.383.0",
     "mongoose": "^8.4.1",
     "next": "14.2.3",
@@ -30,6 +31,7 @@
     "react-hook-form": "^7.51.5",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
+    "yet-another-react-lightbox": "^3.20.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {
