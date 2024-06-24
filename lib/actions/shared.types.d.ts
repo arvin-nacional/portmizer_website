@@ -21,3 +21,18 @@ export interface addCareerParams {
   message: string;
   // resume: File;
 }
+
+export interface addPostParams {
+  title: string;
+  content: string;
+  tags: string[];
+  image: string;
+  path: string;
+}
+
+export interface GetPostsParams {
+  page?: number;
+  pageSize?: number;
+  searchQuery?: string;
+  filter?: string;
+}
