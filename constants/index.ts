@@ -78,7 +78,7 @@ export const company: MobileNavLinks[] = [
     title: "Gallery",
   },
   {
-    link: "/company/News and Updates",
+    link: "/company/news",
     title: "News and Updates",
   },
   {

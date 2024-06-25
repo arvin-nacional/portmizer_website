@@ -36,3 +36,23 @@ export interface GetPostsParams {
   searchQuery?: string;
   filter?: string;
 }
+
+export interface getPostByIdParams {
+  postId: string;
+}
+
+export interface GetRelatedPostsParams {
+  tags: [];
+}
+export interface TagWithPosts {
+  _id: ObjectId;
+  posts: ObjectId[];
+}
+
+export interface GetPostsByTagIdParams {
+  tagIds: ObjectId[];
+  page?: number;
+  pageSize?: number;
+  searchQuery?: string;
+  currentPostId: string;
+}

@@ -54,3 +54,27 @@ interface GalleryImages {
   src: string;
   alt: string;
 }
+
+export interface SearchParamsProps {
+  searchParams: { [key: string]: string | undefined };
+}
+
+export interface ParamsProps {
+  params: { id: string };
+}
+
+export interface RelatedPostsProps {
+  tagIds: ObjectId[];
+  currentPostId: string;
+}
+
+interface UrlQueryParams {
+  params: string;
+  key: string;
+  value: string | null;
+}
+
+interface RemoveUrlQueryParams {
+  params: string;
+  keysToRemove: string[];
+}
