@@ -6,6 +6,7 @@ import {
   LogoProps,
   MobileNavLinks,
   ProductCardProps,
+  ProductDetailsProps,
   SidebarLink,
   TestimonialsProps,
   coreValuesProps,
@@ -43,8 +44,8 @@ export const sidebarLinks: SidebarLink[] = [
 
 export const products: MobileNavLinks[] = [
   {
-    link: "/products/cargotec-kalmar",
-    title: "Cargotec-Kalmar",
+    link: "/products/kalmar",
+    title: "Kalmar",
   },
   {
     link: "/products/sumitomo",
@@ -607,5 +608,446 @@ export const galleryImages: GalleryImages[] = [
   {
     src: "/assets/images/gallery/20.jpg",
     alt: "Gallery Image",
+  },
+];
+
+export const kalmarProductCard: ProductCardProps[] = [
+  {
+    link: "/products/kalmar/reachstacker",
+    title: "Reachstacker",
+    caption:
+      "Proven to deliver excellent lifting power, user-friendly operation, low running costs and excellent environmental performance.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    link: "/products/kalmar/empty-container-handler",
+    title: "Empty Container Handler",
+    caption:
+      "Kalmar's empty container handlers enhance container handling efficiency. Our customizable solutions include single container stackers (8-11 tonnes, 4-8 high) and double container stackers (10-11 tonnes).",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    link: "/products/kalmar/forklift-trucks",
+    title: "Forklift Trucks",
+    caption:
+      "Kalmar has been the preferred brand among quality-aware forklift truck drivers and owners. The trucks are renowned and appreciated for their outstanding efficiency, safety, reliability and of course their low operating cost.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    link: "/products/kalmar/trailer-tractor",
+    title: "Trailer Tractor",
+    caption:
+      "Solutions for port, terminal, logistics, industrial and intermodal applications.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    link: "/products/kalmar/kalmar-insight",
+    title: "Kalmar Insight",
+    caption: "Performance Management Tool for cargo handling operations.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+];
+
+export const kalmarReachStackerCard: ProductDetailsProps[] = [
+  {
+    title: "Kalmar Essential Reachstacker",
+    caption:
+      "Kalmar Essential reachstacker DRU450 is a reliable, robust and highly efficient machine. With the Essential DRU reachstacker you will get more for your money without compromising on quality.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Kalmar Empty and Semi-laden Container Reachstacker",
+    caption:
+      "The Kalmar Reachstacker DRG100-140 for empty and semi-laden containers can handle loads up to 14 tonnes, stacking them up to eight high and three deep. This reach stacker is able to handle a wide variety of containers precisely and safely even in confined spaces.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Kalmar Gloria Reachstacker ",
+    caption: "Meet the latest generation of Kalmar Reachstacker!",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Kalmar Super Gloria Reachstacker",
+    caption:
+      "The Kalmar Super Gloria Reachstacker is a real heavy lifter, able to handle loads up to 130 tonnes when working solo or over 260 tonnes when working in tandem with another Super Gloria Reachstacker.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Kalmar Electric Reachstacker ",
+    caption: "Shifting to electric? See our Kalmar Electric Reachstacker now!",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Kalmar Eco Reachstacker",
+    caption:
+      "The Kalmar Eco Reachstacker provides you with an eco-efficient solution that is guaranteed to use significantly less fuel than other reachstackers.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+];
+
+export const kalmarEmptyContainerHandler: ProductDetailsProps[] = [
+  {
+    title: "Essential Empty Container Handler DCU80-100",
+    caption:
+      "Reliable and efficient, designed for handling empty containers with lifting capacities of 8 to 10 tonnes.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Empty Container Handler DCG80-110",
+    caption:
+      "Versatile and powerful, offering lifting capacities of 8 to 11 tonnes for enhanced container handling efficiency.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Electric Empty Container Handler ECG70",
+    caption:
+      "Eco-friendly and efficient, this electric handler offers a 7-tonne lifting capacity, reducing emissions and operational costs.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Loaded Container Handlers",
+    caption:
+      "Robust and high-performance handlers designed to manage fully loaded containers, ensuring optimal productivity and reliability.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+];
+export const kalmarForkliftTrucks: ProductDetailsProps[] = [
+  {
+    title: "Medium Forklift Trucks 9-18 ton",
+    caption:
+      "Durable and versatile forklifts designed for medium-duty applications, with lifting capacities from 9 to 18 tonnes.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Medium Electric Forklift Trucks 9-18 ton",
+    caption:
+      "Efficient and eco-friendly electric forklifts, offering the same 9 to 18 tonnes lifting capacities with reduced emissions.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Heavy Electric Forklift Trucks 18-33 ton",
+    caption:
+      "Powerful electric forklifts for heavy-duty tasks, providing 18 to 33 tonnes lifting capacities while minimizing environmental impact.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Heavy Forklift Trucks 18-54 ton",
+    caption:
+      "Robust forklifts capable of handling heavy loads, with lifting capacities ranging from 18 to 54 tonnes",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+];
+
+export const kalmarTrailerTractor: ProductDetailsProps[] = [
+  {
+    title: "Kalmar Essential Terminal Tractor TL2, Shunt Truck and Yard Truck",
+    caption:
+      "Built on tested and proven platform, so you get a reliable and robust machine that can handle the harshest condition.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title:
+      "Heavy Terminal Tractor TR618i, TT618i, TRL618i, RoRo Tractor, Shunt Truck and Yard Truck",
+    caption:
+      "The Kalmar Heavy Terminal Tractors are robust, reliable and have an excellent performance when moving heavy loads in harsh port conditions.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Kalmar Ottawa T2 Terminal Tractor, Shunt Truck and Yard Truck",
+    caption:
+      "The Ottawa T2 Terminal Tractor is the latest generation machine from the creator of the terminal tractor in 1958. Designed to bring order, control and efficiency to your trailer handling.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Kalmar T2i Terminal Tractor",
+    caption:
+      "Kalmar’s smartest terminal tractor yet and comes as a complete package.",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+  {
+    title: "Kalmar TX Electrical Terminal Tractor",
+    caption:
+      "TX Electric Yard Truck powered by Lithium-ion batteries can operates up to 22 hours on a single charge and be recharged in two hours",
+    image: "/assets/images/home-product-kalmar.jpg",
+  },
+];
+
+export const sumitomoRubberIndustries: ProductDetailsProps[] = [
+  {
+    title: "Hyper Omega type fender",
+    caption:
+      "Conventional cylindrical pivot-type fenders have been highly praised for their original performance.",
+    image: "/assets/images/home-product-sumitomo.jpg",
+  },
+  {
+    title: "Pie-type fender",
+    caption:
+      "Was developed as a wharf-mounted fender for large ships (over 30,000 tons). It absorbs a large amount of kinetic energy with a wide impact plate, allowing the ship to dock safely with low surface pressure.",
+    image: "/assets/images/home-product-sumitomo.jpg",
+  },
+  {
+    title: "Ultra-pi type fender",
+    caption:
+      "Has a more economical design, higher energy absorption, and a larger design compression to reduce ship motion when moored.",
+    image: "/assets/images/home-product-sumitomo.jpg",
+  },
+  {
+    title: "Lambda-type fender",
+    caption:
+      "Excellent durability and cost-effectiveness. Used in many ports both domestically and overseas.",
+    image: "/assets/images/home-product-sumitomo.jpg",
+  },
+];
+
+export const tecContainerProductCard: ProductCardProps[] = [
+  {
+    link: "/products/tec-container/container-spreaders",
+    title: "Container Spreaders",
+    caption:
+      "Efficient and reliable spreaders for safe and precise container handling.",
+    image: "/assets/images/home-product-tecContainer.jpg",
+  },
+  {
+    link: "/products/tec-container/reachstacker-attachments",
+    title: "Reachstacker Attachments",
+    caption:
+      "Versatile attachments enhancing the functionality and efficiency of your reachstacker.",
+    image: "/assets/images/home-product-tecContainer.jpg",
+  },
+  {
+    link: "/products/tec-container/overheight-frame",
+    title: "Overheight Frames",
+    caption:
+      "Specialized frames for handling oversized containers securely and efficiently.",
+    image: "/assets/images/home-product-tecContainer.jpg",
+  },
+  {
+    link: "/products/tec-container/spreader-beams",
+    title: "Spreader Beams / Lifting Beams",
+    caption:
+      "Durable beams designed for lifting and handling various heavy loads.",
+    image: "/assets/images/home-product-tecContainer.jpg",
+  },
+  {
+    link: "/products/tec-container/forklift-truck-attachments",
+    title: "Forklift Truck Attachments",
+    caption:
+      "Innovative attachments to expand the capabilities of your forklift trucks.",
+    image: "/assets/images/home-product-tecContainer.jpg",
+  },
+  {
+    link: "/products/tec-container/lashing-cages",
+    title: "Lashing Cages",
+    caption:
+      "Safe and sturdy cages for securing and handling cargo during transportation.",
+    image: "/assets/images/home-product-tecContainer.jpg",
+  },
+];
+
+export const tecContainerSpreaders: ProductDetailsProps[] = [
+  {
+    title: "Semi Automatic Spreaders",
+    caption:
+      "Newly designed floating twist-locks that can be easily removed and replaced when they are damaged",
+    image: "/assets/images/home-product-tecContainer.jpg",
+  },
+  {
+    title: "Easy Spreaders",
+    caption:
+      "Ready for non-intensive use and suitable for all container types. Available in door and outdoor versions.",
+    image: "/assets/images/home-product-tecContainer.jpg",
+  },
+  {
+    title: "Spreaders for Indoor Use",
+    caption:
+      "Semi-automatic or manually operated for all kinds of containers with short wires or directly linked ot the hook of the crane.",
+    image: "/assets/images/home-product-tecContainer.jpg",
+  },
+];
+export const tecContainerReachstackerAttachments: ProductDetailsProps[] = [
+  {
+    title: "Frame with Double Hook",
+    caption:
+      "This frame transforms any spreader into a Multipurpose transporter with a lower hook for general cargo. Different configurations, lengths and SWL up to 80Tons",
+    image: "/assets/images/tec-container/image1.jpg",
+  },
+  {
+    title: "Multipurpose Frame with Lower Coil Handler",
+    caption:
+      "This frame transforms any spreader for a container into a coil handler. The SWL and sizes can be customised to suit your designated use and particular requirements.",
+    image: "/assets/images/tec-container/image2.jpg",
+  },
+  {
+    title: "Multipurpose Beam with Lower Hook",
+    caption:
+      "This Beam transforms any spreader into a multipurpose transporter with a lower hook for general cargo.",
+    image: "/assets/images/tec-container/image3.jpg",
+  },
+  {
+    title: "Sliding fork frame for reach stackers",
+    caption:
+      "This versatile frame with forks can easily turn any reach stackers into a forklift truck. It has a very low maintenance cost and a robust structure. Standard SWL is 30T but can be customised according to client’s needs.",
+    image: "/assets/images/tec-container/image4.png",
+  },
+  {
+    title: "Lateral Coil Handler for Reach Stacker",
+    caption:
+      "This is an attachment that eases the load/unload of transversal coils from or to a train or truck. Hydraulically activated it can handle diverse sizes and numbers of coils each cycle.",
+    image: "/assets/images/tec-container/image5.jpg",
+  },
+  {
+    title: "Multipurpose Frame with Multiple Lower Lifting Points",
+    caption:
+      "This frame transforms a spreader into a multipurpose transporter with multiple lower lifting points for general cargo. Multiple configurations, lengths and SWL available.",
+    image: "/assets/images/tec-container/image6.jpg",
+  },
+  {
+    title: "Overheight Frame for Open Cargo",
+    caption:
+      "A classic for flat racks and open cargo handling with a reach stacker. All options available – telescopic and fixed, fully automatic or mechanical, all sizes and heights.",
+    image: "/assets/images/tec-container/image7.jpg",
+  },
+];
+
+export const tecContainerOverheightFrame: ProductDetailsProps[] = [
+  {
+    title: "Fully Automatic and Universal Frames",
+    caption:
+      "This overheight frame is the cutting-edge solution for handling oversized cargo in ports. Its design and operational method significantly reduce loading and unloading times, enhancing safety for stevedores. It is the ideal model for heavy oversized cargo traffic.",
+    image: "/assets/images/tec-container/overheight-1.jpg",
+  },
+  {
+    title: "Fully Mechanical and Fully Universal Universal Over Height Frames",
+    caption:
+      "This overheight frame is the perfect solution for managing low volumes of oversized cargo. It marks a significant improvement over the traditional use of chains with hooks. The twist locks are operated using chains positioned at the short sides of the frame and feature security probes to prevent accidental opening or closing.",
+    image: "/assets/images/tec-container/overheight-2.jpg",
+  },
+  {
+    title: "Mechanical Frames",
+    caption:
+      "This overheight frame is the optimal solution for applications requiring a physical connection between it and the main spreader. When the main spreader's twist locks open, the overheight frame also opens, and the same mechanism applies when the main spreader closes. This setup significantly aids crane operators in their tasks. It operates entirely mechanically, without the need for a power supply.",
+    image: "/assets/images/tec-container/overheight-4.png",
+  },
+  {
+    title: "Overheight Manual and Universal Frames",
+    caption:
+      "This overheight frame is the perfect solution for handling low volumes of oversized cargo. It offers a significant improvement over the traditional use of chains with hooks. The twist locks are operated using chains located at the short sides of the frame and include security probes to prevent accidental opening or closing.",
+    image: "/assets/images/tec-container/overheight-3.jpg",
+  },
+];
+
+export const tecContainerSpreaderBeams: ProductDetailsProps[] = [
+  {
+    title: "Spreader Beam",
+    caption:
+      "Transforming a standard spreader into a versatile multipurpose frame is effortless with this product. By installing two units, one on each short side of the spreader, it becomes adaptable to accommodate various load configurations. It features D-rings and can handle loads up to SWL 20 tons, making it a highly practical solution for diverse lifting needs.",
+    image: "/assets/images/tec-container/spreader-beams-1.jpg",
+  },
+  {
+    title: "Multipurpose Beam",
+    caption:
+      "Multipurpose Beam, the essential lifting beam for handling general cargo. It is available in a range of configurations, with capacities from SWL 16 tons up to 45 tons and widths spanning from 6 meters to 12 meters. Custom configurations are also available to meet specific operational needs.",
+    image: "/assets/images/tec-container/multipurpose-beam.jpg",
+  },
+  {
+    title: "Modular Beam",
+    caption:
+      "The most convenient solution for utilizing multiple beams efficiently. Featuring a central body and two lateral heads with adjustable links, it accommodates both single and tandem crane operations seamlessly. Customize its length and Safe Working Load (SWL) up to 100 tons to meet specific lifting requirements with ease.",
+    image: "/assets/images/tec-container/modular-beam.png",
+  },
+  {
+    title: "Heavy Duty Beam",
+    caption:
+      "Comprehensive lineup of heavy-duty beams and frames, designed for use with both single and tandem cranes. Our range starts from a minimum Safe Working Load (SWL) of 30 tons, extending up to 100 tons for maximum lifting capacity. These products are also available in telescopic versions, offering flexibility in length and SWL customization to suit diverse operational needs.",
+    image: "/assets/images/tec-container/heavy-duty-beam.png",
+  },
+  {
+    title: "Multipurpose Heavy Beam",
+    caption:
+      "A powerful and versatile solution for heavy lifting tasks. It's compatible with both single and tandem cranes, featuring a central lower double hook or shackles holes capable of handling up to 50 tons each. Choose from SWL options of 75 tons at the central hook or 100 tons at the lateral holes, providing flexibility to meet various lifting requirements with multiple customizable configurations.",
+    image: "/assets/images/tec-container/multipurpose-beam2.png",
+  },
+  {
+    title: "Simple Beam for Shackles",
+    caption:
+      "A a specialized solution designed to streamline loading and unloading operations. Suitable for use with single or tandem cranes, this beam offers customizable length and Safe Working Load (SWL), providing versatility to address various lifting challenges efficiently.",
+    image: "/assets/images/tec-container/simple-beam.png",
+  },
+  {
+    title: "Beam for Tandem Cranes",
+    caption:
+      "The optimal solution for integrating two cranes into a single cohesive unit. This beam facilitates the seamless collaboration of two cranes, enhancing operational efficiency and lifting capacity.",
+    image: "/assets/images/tec-container/beam-for-tandem-cranes.png",
+  },
+  {
+    title: "Small beam for Heavy loads",
+    caption:
+      "Combining compact size with impressive strength. This beam offers customizable length and Safe Working Load (SWL), making it versatile for various heavy lifting applications.",
+    image: "/assets/images/tec-container/heavy-loads.png",
+  },
+  {
+    title: "Beam for Tandem Cranes",
+    caption:
+      "Designed to integrate two cranes onto a single beam. This product offers customizable length and Safe Working Load (SWL), providing flexibility to suit diverse lifting requirements.",
+    image: "/assets/images/tec-container/heavy-loads.png",
+  },
+  {
+    title: "Gravity Point Regulation",
+    caption:
+      "Designed to adjust the gravity point of loads when balance is not achieved. This system features lower lifting holes, allowing for customizable length and Safe Working Load (SWL), ensuring optimal load management in diverse lifting scenarios.",
+    image: "/assets/images/tec-container/heavy-loads-beam.png",
+  },
+];
+export const tecContainerForkliftTruckAttachments: ProductDetailsProps[] = [
+  {
+    title: "Multipurpose Hooks",
+    caption:
+      "Designed to transform a standard forklift truck into a versatile vehicle with ease. Featuring a special rotary hook beneath the main structure, this model supports up to 32 tons and offers customizable Safe Working Load (SWL) to suit your specific requirements",
+    image: "/assets/images/tec-container/hook-1.jpg",
+  },
+  {
+    title: "Coil Handlers",
+    caption:
+      "The top-selling solution that effortlessly transforms a standard forklift truck into a robust coil handling machine. It enables loading and unloading coils at various angles without requiring movement from the forklift truck. This design reduces both the number of necessary movements and risks for the driver and ground staff alike.",
+    image: "/assets/images/tec-container/coil-handlers.png",
+  },
+  {
+    title: "Fixed coil handlers",
+    caption:
+      "Featuring single, double, triple, and quadruple coil holders designed to streamline handling operations. These handlers optimize the loading and unloading processes, reducing cycle times and enhancing operational efficiency. They provide a safe handling solution while minimizing costs. Customize the Safe Working Load (SWL) and main dimensions to precisely match your requirements.",
+    image: "/assets/images/tec-container/fixed-coil-handlers.png",
+  },
+  {
+    title: "Special Forks and Clamps",
+    caption:
+      "Designed to enhance the capabilities of your forklift truck with wider, higher, or stronger options. Choose from double, triple, and quadruple forks with telescopic or fixed movements to handle various tasks. These specialized models excel in loading and unloading items like iron and steel rods, slabs, wires, and more, ensuring efficient material handling operations.",
+    image: "/assets/images/tec-container/forks-and-clamps.jpg",
+  },
+  {
+    title: "Boat handling forks",
+    caption:
+      "a comprehensive range of attachments tailored for boat handling tasks. Lift small boats using nylon sleeves on the forks, or opt for sophisticated attachments designed for larger boats. These advanced options include features such as negative elevation for easy loading and releasing from the water, hydraulic opening mechanisms for lifting from below, and customizable Safe Working Load (SWL) and length to suit specific requirements.",
+    image: "/assets/images/tec-container/boat-handling-forks.png",
+  },
+  {
+    title: "Container Handling Forks",
+    caption:
+      "Equipped with a spreader designed for efficiently handling 20ft and 40ft ISO containers. These forks feature a mechanical latching system to securely attach the spreader, forklift pockets customized to customer specifications, and security pins ensuring a safe connection between twist locks and containers. The Safe Working Load (SWL) is adjustable to meet diverse customer requirements.",
+    image: "/assets/images/tec-container/boat-handling-forks.png",
+  },
+];
+
+export const tecContainerLashingCages: ProductDetailsProps[] = [
+  {
+    title: "Gondola Safety Cage /Lashing Cage BA-323T",
+    caption:
+      "Conveniently deliverable within a 40ft FCL (Full Container Load), designed to accommodate up to two stevedores with complete equipment per cabin. The cabin features guardrails and handrails along its entire perimeter, ensuring comprehensive safety. All doors for stevedores open inwards and are equipped with hinges featuring springs, autoclose, and autolock systems for added convenience and security. The anti-slip floor includes drainage spots, while two anchor points per cabin, compliant with EN795 standards, are strategically placed behind working positions to ensure fall protection. Suitable for temperatures as low as -20ºC and relative humidity up to 100%, it also features a raised floor to prevent entrapment.",
+    image: "/assets/images/tec-container/gondola-safety-cage.png",
+  },
+  {
+    title: "Safety Cage Under Spreader BA-185",
+    caption:
+      "Designed for up to four persons with complete working equipment. It features a 2100mm internal height and perimeter safety railings, along with internal handholds for added security. Doors open inward with hinges equipped for autoclose and autolock functionality. The cage includes a dual safety system: automatic using spreader twistlocks and manual with internal chains. It boasts an anti-slip floor with drainage, eight fall protection anchor points, and a roof covering most areas, except corners for easy spreader connection. Chamfered corners facilitate twistlock unlashing, ensuring efficient cargo handling.",
+    image: "/assets/images/tec-container/safety-cage-under-spreader.png",
   },
 ];

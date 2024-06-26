@@ -1,6 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import ParseHTML from "../shared/ParseHTML";
 
 interface Props {
   title: string;
@@ -21,8 +22,9 @@ const BlogCard = ({ title, image, date, link, content }: Props) => {
           }}
         ></div>
         <h2 className="base-bold mt-5">{title}</h2>
-        <h2 className="small-regular ">{date}</h2>
-        <p className="body-regular line-clamp-4 mt-5">{content}</p>
+        <h2 className="small-regular mb-2">{date}</h2>
+        <ParseHTML data={content} styles="line-clamp-4" />
+        {/* <p className="body-regular line-clamp-4 mt-5">{content}</p> */}
         <div className="flex mt-5 items-center">
           <p className=" text-primary-500">Read more</p>
           <ChevronRight className="h-4 text-primary-500" />

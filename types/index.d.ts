@@ -29,6 +29,12 @@ interface ProductCardProps {
   link: string;
 }
 
+interface ProductDetailsProps {
+  image: string;
+  title: string;
+  caption: string;
+}
+
 interface LogoProps {
   src: string;
   alt: string;

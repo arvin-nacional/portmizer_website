@@ -1,4 +1,5 @@
 import { ProductCardProps } from "@/types";
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,7 +7,7 @@ import React from "react";
 const ProductCard = ({ image, title, caption, link }: ProductCardProps) => {
   return (
     <Link href={link}>
-      <div className="flex flex-col items-center justify-center px-10 py-[21px] text-center hover:shadow-xl transition-shadow duration-300 h-[100%] rounded-3xl">
+      <div className="flex flex-col items-center justify-start px-10 py-[21px] text-center hover:shadow-xl transition-shadow duration-300 h-[100%] rounded-3xl">
         <Image
           src={image}
           alt="Product Image"
@@ -16,8 +17,12 @@ const ProductCard = ({ image, title, caption, link }: ProductCardProps) => {
           style={{ width: "100%", height: "180px", objectFit: "cover" }}
           className="rounded-2xl bg-cover"
         />
-        <p className="h2-bold mt-10">{title}</p>
-        <p className="mt-10">{caption}</p>
+        <p className="base-bold mt-10">{title}</p>
+        <p className="mt-10 body-regular">{caption}</p>
+        {/* <div className="flex mt-5 items-center">
+          <p className=" text-primary-500">See more</p>
+          <ChevronRight className="h-4 text-primary-500" />
+        </div> */}
       </div>
     </Link>
   );

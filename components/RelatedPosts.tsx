@@ -28,7 +28,7 @@ const RelatedPosts = async ({ currentPostId, tagIds }: RelatedPostsProps) => {
                 />
               </div>
 
-              <div className="flex flex-col justify-center group ">
+              <div className="flex flex-col justify-center group w-[250px]">
                 <p className="paragraph-semibold truncate group-hover:text-primary-500">
                   {item.title}
                 </p>

@@ -1,5 +1,6 @@
 import RecentPosts from "@/components/RecentPosts";
 import RelatedPosts from "@/components/RelatedPosts";
+import ParseHTML from "@/components/shared/ParseHTML";
 import Header from "@/components/ui/header";
 import { IPost } from "@/database/post.model";
 import { getPostById } from "@/lib/actions/post.action";
@@ -22,7 +23,7 @@ const page = async ({ params }: ParamsProps) => {
           <div className="grid grid-cols-3 gap-10">
             <div className="col-span-2">
               <div
-                className="relative w-[800px] h-[400px] bg-center object-cover flex flex-col text-white justify-end p-12 rounded-2xl"
+                className="relative w-[800px] h-[400px] bg-center object-cover flex flex-col text-white justify-end p-12 rounded-2xl mb-10"
                 style={{
                   backgroundImage: `url(${details.image})`,
                 }}
@@ -35,7 +36,9 @@ const page = async ({ params }: ParamsProps) => {
                   </div>
                 </div>
               </div>
-              <p className="paragraph-regular mt-10">{details.content}</p>
+
+              <ParseHTML data={details.content} />
+              {/* <p className="paragraph-regular mt-10">{details.content}</p> */}
             </div>
             <div className="col-span-1 flex flex-col gap-10">
               <RecentPosts />
