@@ -304,7 +304,7 @@ export const missionObjectives: coreValuesProps[] = [
 
 export const productsCard: ProductCardProps[] = [
   {
-    link: "/products/cargotec-kalmar",
+    link: "/products/kalmar",
     title: "Kalmar Port and Terminal System",
     caption:
       "Kalmar offers a wide range of cargo handling solutions and services to ports, terminals, distribution centres and to heavy industry.",
@@ -1049,5 +1049,65 @@ export const tecContainerLashingCages: ProductDetailsProps[] = [
     caption:
       "Designed for up to four persons with complete working equipment. It features a 2100mm internal height and perimeter safety railings, along with internal handholds for added security. Doors open inward with hinges equipped for autoclose and autolock functionality. The cage includes a dual safety system: automatic using spreader twistlocks and manual with internal chains. It boasts an anti-slip floor with drainage, eight fall protection anchor points, and a roof covering most areas, except corners for easy spreader connection. Chamfered corners facilitate twistlock unlashing, ensuring efficient cargo handling.",
     image: "/assets/images/tec-container/safety-cage-under-spreader.png",
+  },
+];
+export const dafoVehicleFireProtection: ProductDetailsProps[] = [
+  {
+    title: "Buses",
+    caption:
+      "Ensure passenger safety with Dafo's rapid-response fire suppression systems, designed to quickly control and extinguish fires in transit.",
+    image: "/assets/images/dafo-bus.png",
+  },
+  {
+    title: "Mining Machinery",
+    caption:
+      "Protect your valuable mining equipment from the hazards of fire with Dafo's robust and reliable extinguishing solutions, minimizing downtime and maximizing safety.",
+    image: "/assets/images/dafo-mining.png",
+  },
+  {
+    title: "Construction Equipment",
+    caption:
+      "Shield your construction machinery from fire risks with Dafo's advanced suppression systems, providing fast and effective protection to keep your projects on track.",
+    image: "/assets/images/dafo-construction.png",
+  },
+  {
+    title: "Material Handling",
+    caption:
+      "Secure your material handling operations with Dafo's efficient fire suppression systems, offering swift and reliable fire control to protect assets and personnel.",
+    image: "/assets/images/dafo-material-handling.png",
+  },
+];
+export const mantsinenProducts: ProductDetailsProps[] = [
+  {
+    title: "Material Handlers",
+    caption:
+      "Enhance your operations with Mantsinen’s robust and efficient material handlers, designed for maximum productivity and reliability in various applications.",
+    image: "/assets/images/material-handlers.jpg",
+  },
+  {
+    title: "Attachments",
+    caption:
+      "Optimize versatility and performance with Mantsinen’s high-quality attachments, engineered to meet diverse material handling needs.",
+    image: "/assets/images/mantsinen-attachments.png",
+  },
+  {
+    title: "Log Handlers",
+    caption:
+      "Streamline your log handling processes with Mantsinen’s powerful and precise log handlers, ensuring safe and efficient operations in demanding environments.",
+    image: "/assets/images/log-handlers.jpg",
+  },
+];
+export const actiwProducts: ProductDetailsProps[] = [
+  {
+    title: "Container Loading for Wood Products",
+    caption:
+      "Maximize efficiency and minimize damage with LoadPlate's seamless container loading for wood products, ensuring safe and quick operations.",
+    image: "/assets/images/actiw-steel.png",
+  },
+  {
+    title: "Container Loading for Steel Products",
+    caption:
+      "Enhance safety and productivity in your steel product shipments with LoadPlate, providing reliable and cost-effective container loading solutions.",
+    image: "/assets/images/actiw-wood.png",
   },
 ];

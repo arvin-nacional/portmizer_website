@@ -9,7 +9,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <Header title="Kalmar" img="/assets/images/about-image.jpg" />
+      <Header title="Products" img="/assets/images/about-image.jpg" />
       <ProductsPage
         title="Sumitomo Rubber Fenders"
         caption="Sumitomo Rubbber Industry is world’s best producer of rubber fenders. SRI responds to a diverse range of needs worldwide by providing products created with the latest technologies and highest quality."

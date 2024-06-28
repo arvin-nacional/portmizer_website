@@ -16,7 +16,7 @@ const RelatedPosts = async ({ currentPostId, tagIds }: RelatedPostsProps) => {
       <div className="flex flex-col gap-3">
         {result?.posts.map((item) => (
           <Link href={`/company/news/${item._id}`} key={item.title}>
-            <div className="flex gap-5">
+            <div className="flex gap-5 max-sm:flex-row max-xl:flex-col">
               <div>
                 <img
                   src={item.image}

@@ -12,7 +12,7 @@ const RecentPosts = async () => {
       <div className="flex flex-col gap-3">
         {result?.posts.map((item) => (
           <Link href={`/company/news/${item._id}`} key={item.title}>
-            <div className="flex gap-5">
+            <div className="flex gap-5 max-xl:flex-col max-md:flex-row">
               <div>
                 <img
                   src={item.image}
