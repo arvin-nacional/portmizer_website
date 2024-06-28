@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-
+import "animate.css";
 import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -17,7 +17,7 @@ import { heroServices, products } from "@/constants";
 
 const Hero = () => {
   const plugin = React.useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: true })
+    Autoplay({ delay: 5000, stopOnInteraction: true })
   );
   return (
     <div className="w-full h-screen flex justify-center items-center overflow-hidden ">
@@ -29,7 +29,7 @@ const Hero = () => {
       >
         <CarouselContent>
           <CarouselItem>
-            <div className="bg-[url('/assets/images/hero-image-1.jpg')] bg-cover bg-center w-full flex justify-center items-center  max-sm:px-20 min-h-[600px]">
+            <div className="bg-[url('/assets/images/hero-image-1.jpg')] bg-cover bg-center w-full flex justify-center items-center  max-sm:px-12 min-h-[600px]">
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10 max-sm:gap-20">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
@@ -42,7 +42,7 @@ const Hero = () => {
                     driving progress and achieving operational excellence in the
                     dynamic world of port and container handling.
                   </h2>
-                  <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out">
+                  <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out animate__fadeIn animate__delay-3s">
                     <Link
                       href="/contact"
                       className="base-medium flex gap-2 items-center"
@@ -61,7 +61,7 @@ const Hero = () => {
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="bg-[url('/assets/images/hero-image-2.jpg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-20">
+            <div className="bg-[url('/assets/images/hero-image-2.jpg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-12">
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
@@ -74,7 +74,7 @@ const Hero = () => {
                     has been synonymous with innovation and reliability in the
                     shipping, stevedoring, and container yard sectors.
                   </h2>
-                  <Button className="px-8 py-7 rounded-3xl primary-gradient hover:primary-gradient2 transition-all duration-300 ease-in-out">
+                  <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out animate__fadeIn animate__delay-3s">
                     <Link
                       href="/contact"
                       className="base-medium flex gap-2 items-center"
@@ -93,7 +93,7 @@ const Hero = () => {
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="bg-[url('/assets/images/hero-image-3.jpg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-20">
+            <div className="bg-[url('/assets/images/hero-image-3.jpg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-12">
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
@@ -124,7 +124,7 @@ const Hero = () => {
                       </Link>
                     ))}
                   </div>
-                  <Button className="px-8 py-7 rounded-3xl primary-gradient hover:primary-gradient2 transition-all duration-300 ease-in-out">
+                  <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out animate__fadeIn animate__delay-3s">
                     <Link
                       href="/contact"
                       className="base-medium flex gap-2 items-center"
@@ -144,7 +144,7 @@ const Hero = () => {
           </CarouselItem>
 
           <CarouselItem>
-            <div className="bg-[url('/assets/images/hero-image-4.jpg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-20">
+            <div className="bg-[url('/assets/images/hero-image-4.jpg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-12">
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
@@ -175,7 +175,7 @@ const Hero = () => {
                       </Link>
                     ))}
                   </div>
-                  <Button className="px-8 py-7 rounded-3xl primary-gradient hover:primary-gradient2 transition-all duration-300 ease-in-out">
+                  <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out animate__fadeIn animate__delay-3s">
                     <Link
                       href="/contact"
                       className="base-medium flex gap-2 items-center"

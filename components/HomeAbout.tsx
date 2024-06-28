@@ -46,7 +46,10 @@ const HomeAbout = () => {
             and operators.
           </p>
           <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out mt-10">
-            <Link href="/about" className="base-medium flex gap-2 items-center">
+            <Link
+              href="/company/about"
+              className="base-medium flex gap-2 items-center"
+            >
               <Image
                 src="/assets/icons/arrow-right-btn.svg"
                 alt="arrow-right"

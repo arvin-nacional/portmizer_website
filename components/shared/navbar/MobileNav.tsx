@@ -145,16 +145,18 @@ const NavContent = () => {
           </div>
         )}
       </div>
-      <Link href="/location" className="flex gap-3 base-semibold">
-        {" "}
-        <Image
-          src="/assets/icons/port.svg"
-          alt="home-icon"
-          width={24}
-          height={24}
-        />{" "}
-        Locations
-      </Link>
+      <SheetClose asChild>
+        <Link href="/location" className="flex gap-3 base-semibold">
+          {" "}
+          <Image
+            src="/assets/icons/port.svg"
+            alt="home-icon"
+            width={24}
+            height={24}
+          />{" "}
+          Locations
+        </Link>
+      </SheetClose>
       <Link href="/contact">
         <button
           type="button"
