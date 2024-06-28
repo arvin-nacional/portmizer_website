@@ -20,7 +20,7 @@ const Footer = () => {
             co-workers, shareholders and communities on a long-term basis.
           </p>
           <div className="flex gap-5">
-            <a href="https://www.facebook.com/rvinpaul" target="_blank">
+            <a href="https://www.facebook.com/Portmizer" target="_blank">
               <Image
                 src="/assets/icons/facebook_icon.svg"
                 width={20}
@@ -29,7 +29,7 @@ const Footer = () => {
                 // className="invert-colors"
               />
             </a>
-            <a href="https://www.instagram.com/rvinpaul" target="_blank">
+            <a href="https://www.instagram.com/portmizercorp/" target="_blank">
               <Image
                 src="/assets/icons/instagram_icon.svg"
                 width={20}
@@ -38,7 +38,10 @@ const Footer = () => {
                 // className="invert-colors"
               />
             </a>
-            <a href="https://www.linkedin.com/rvinpaul" target="_blank">
+            <a
+              href="https://www.linkedin.com/company/portmizer-philippines-corporation/about/"
+              target="_blank"
+            >
               <Image
                 src="/assets/icons/linkedin_icon.svg"
                 width={20}
