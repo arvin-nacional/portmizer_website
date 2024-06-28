@@ -1,5 +1,6 @@
 import RecentPosts from "@/components/RecentPosts";
 import RelatedPosts from "@/components/RelatedPosts";
+import CTA from "@/components/shared/CTA";
 import ParseHTML from "@/components/shared/ParseHTML";
 import Header from "@/components/ui/header";
 import { IPost } from "@/database/post.model";
@@ -49,6 +50,11 @@ const page = async ({ params }: ParamsProps) => {
           </div>
         </div>
       </section>
+      <CTA
+        title="Want to know more about our products?"
+        action="Ask for a free consult"
+        link="/contact"
+      />
     </div>
   );
 };

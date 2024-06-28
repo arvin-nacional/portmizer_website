@@ -29,7 +29,7 @@ const Hero = () => {
       >
         <CarouselContent>
           <CarouselItem>
-            <div className="bg-[url('/assets/images/hero-img-6.svg')] bg-cover bg-center w-full flex justify-center items-center  max-sm:px-20 min-h-[600px]">
+            <div className="bg-[url('/assets/images/hero-image-1.jpg')] bg-cover bg-center w-full flex justify-center items-center  max-sm:px-20 min-h-[600px]">
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10 max-sm:gap-20">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
@@ -42,7 +42,7 @@ const Hero = () => {
                     driving progress and achieving operational excellence in the
                     dynamic world of port and container handling.
                   </h2>
-                  <Button className="px-8 py-7 rounded-3xl primary-gradient hover:primary-gradient2 transition-all duration-300 ease-in-out">
+                  <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out">
                     <Link
                       href="/contact"
                       className="base-medium flex gap-2 items-center"
@@ -61,7 +61,7 @@ const Hero = () => {
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="bg-[url('/assets/images/hero-img-2.svg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-20">
+            <div className="bg-[url('/assets/images/hero-image-2.jpg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-20">
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
@@ -93,7 +93,7 @@ const Hero = () => {
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="bg-[url('/assets/images/hero-img-4.svg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-20">
+            <div className="bg-[url('/assets/images/hero-image-3.jpg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-20">
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
@@ -144,7 +144,7 @@ const Hero = () => {
           </CarouselItem>
 
           <CarouselItem>
-            <div className="bg-[url('/assets/images/hero-img-5.svg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-20">
+            <div className="bg-[url('/assets/images/hero-image-4.jpg')] bg-cover bg-center w-full flex justify-center items-center max-sm:px-20">
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">

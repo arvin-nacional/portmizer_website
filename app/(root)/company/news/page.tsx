@@ -1,5 +1,6 @@
 import LocalSearchbar from "@/components/search/LocalSearchBar";
 import Pagination from "@/components/search/Pagination";
+import CTA from "@/components/shared/CTA";
 import BlogCard from "@/components/ui/blogCard";
 import Header from "@/components/ui/header";
 import { getPosts } from "@/lib/actions/post.action";
@@ -46,6 +47,11 @@ const page = async ({ searchParams }: SearchParamsProps) => {
           />
         </div>
       </section>
+      <CTA
+        title="Want to know more about our products?"
+        action="Ask for a free consult"
+        link="/contact"
+      />
     </div>
   );
 };
