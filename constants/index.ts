@@ -531,7 +531,7 @@ export const locations: LocationProps[] = [
 export const galleryImages: GalleryImages[] = [
   {
     src: "/assets/images/gallery/1.jpg",
-    alt: "Gallery Image",
+    alt: "Gallery Image1",
   },
   {
     src: "/assets/images/gallery/2.jpg",
