@@ -29,6 +29,18 @@ export interface addPostParams {
   image: string;
   path: string;
 }
+export interface EditPostParams {
+  postId: string;
+  title: string;
+  content: string;
+  path: string;
+  image: string;
+}
+
+export interface DeletePostParams {
+  postId: string;
+  path: string;
+}
 
 export interface GetPostsParams {
   page?: number;

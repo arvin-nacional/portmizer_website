@@ -2,10 +2,14 @@ import LocalSearchbar from "@/components/search/LocalSearchBar";
 import Pagination from "@/components/search/Pagination";
 import CTA from "@/components/shared/CTA";
 import BlogCard from "@/components/ui/blogCard";
+import { Button } from "@/components/ui/button";
 import Header from "@/components/ui/header";
 import { getPosts } from "@/lib/actions/post.action";
 import { formatDate } from "@/lib/utils";
 import { SearchParamsProps } from "@/types";
+import { SignedIn } from "@clerk/nextjs";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const page = async ({ searchParams }: SearchParamsProps) => {
@@ -19,13 +23,30 @@ const page = async ({ searchParams }: SearchParamsProps) => {
       <Header title="News and Updates" img="/assets/images/about-image.jpg" />
       <section className="flex items-center justify-center px-16 sm:py-20 max-md:px-5">
         <div className="w-[1200px] max-w-full flex justify-center pb-6 max-md:mt-10 flex-col items-center ">
-          <div className="w-[900px] ">
+          <SignedIn>
+            <Button className="px-7 py-6 mb-10 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out animate__fadeIn animate__delay-3s">
+              <Link
+                href="/company/news/add"
+                className="base-medium flex gap-2 items-center"
+              >
+                <Image
+                  src="/assets/icons/add.svg"
+                  alt="arrow-right"
+                  width={24}
+                  height={24}
+                />
+                Add an article
+              </Link>
+            </Button>
+          </SignedIn>
+
+          <div className="w-[900px] max-lg:w-[100%]">
             <LocalSearchbar
               route="/company/news"
               iconPosition="left"
               imgSrc="/assets/icons/search.svg"
               placeholder="Search for articles"
-              otherClasses="flex-1"
+              otherClasses=""
             />
           </div>
 

@@ -23,13 +23,19 @@ import { Textarea } from "../ui/textarea";
 import { AutosizeTextarea } from "@/components/ui/autosize-textarea";
 import Image from "next/image";
 import { Badge } from "../ui/badge";
-import { createPost } from "@/lib/actions/post.action";
+import { createPost, editPost } from "@/lib/actions/post.action";
+import { Avatar, AvatarImage, AvatarFallback } from "@radix-ui/react-avatar";
 
 interface Props {
   type?: string;
+  postDetails?: string;
+  postId?: string;
 }
 
-const Post = ({ type }: Props) => {
+const Post = ({ type, postDetails, postId }: Props) => {
+  // convert postDetails to object
+  const parsedPostDetails = postDetails ? JSON.parse(postDetails || "") : null;
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const editorRef = useRef(null);
   const router = useRouter();
@@ -37,8 +43,14 @@ const Post = ({ type }: Props) => {
 
   const [preview, setPreview] = useState({
     name: "default",
-    url: "https://res.cloudinary.com/dey07xuvf/image/upload/v1700148763/default-user-square_fmd1az.svg",
+    url: `${
+      parsedPostDetails?.image
+        ? parsedPostDetails.image
+        : "https://res.cloudinary.com/dey07xuvf/image/upload/v1700148763/default-user-square_fmd1az.svg"
+    }`,
   });
+
+  const groupedTags = parsedPostDetails?.tags.map((tag: any) => tag.name);
 
   // convert image to string
   const handleImageChange = (file: File) => {
@@ -57,10 +69,10 @@ const Post = ({ type }: Props) => {
   const form = useForm<z.infer<typeof PostSchema>>({
     resolver: zodResolver(PostSchema),
     defaultValues: {
-      title: "",
-      content: "",
-      image: "",
-      tags: [],
+      title: parsedPostDetails?.title || "",
+      content: parsedPostDetails?.content || "",
+      image: parsedPostDetails?.image || "",
+      tags: groupedTags || [],
     },
   });
 
@@ -105,23 +117,25 @@ const Post = ({ type }: Props) => {
 
     try {
       console.log(values, preview.url);
-      // if(type === 'Edit') {
-      //   await editQuestion({
-      //     questionId: parsedQuestionDetails._id,
-      //     title: values.title,
-      //     content: values.explanation,
-      //     path: pathname,
-      //   })
-      //   router.push(`/question/${parsedQuestionDetails._id}`);
-      // } else {
-      await createPost({
-        title: values.title,
-        content: values.content,
-        tags: values.tags,
-        image: preview.url,
-        path: pathname,
-      });
-      router.push("/");
+      if (type === "Edit") {
+        await editPost({
+          postId: parsedPostDetails._id,
+          title: values.title,
+          content: values.content,
+          image: preview.url,
+          path: pathname,
+        });
+        router.push(`/company/news/${parsedPostDetails._id}`);
+      } else {
+        await createPost({
+          title: values.title,
+          content: values.content,
+          tags: values.tags,
+          image: preview.url,
+          path: pathname,
+        });
+        router.push(`/company/news`);
+      }
     } catch (error) {
     } finally {
       setIsSubmitting(false);
@@ -172,7 +186,7 @@ const Post = ({ type }: Props) => {
                   }}
                   onBlur={field.onBlur}
                   onEditorChange={(content) => field.onChange(content)}
-                  initialValue={""}
+                  initialValue={parsedPostDetails?.content || ""}
                   init={{
                     height: 350,
                     menubar: false,
@@ -208,6 +222,14 @@ const Post = ({ type }: Props) => {
             </FormItem>
           )}
         />
+        {/* photo preview */}
+        <Avatar className="h-24 w-24">
+          <AvatarImage
+            src={preview.url}
+            className="object-cover object-left-top"
+          />
+          <AvatarFallback>Your Photo</AvatarFallback>
+        </Avatar>
         <FormField
           control={form.control}
           name="image"
@@ -295,9 +317,9 @@ const Post = ({ type }: Props) => {
           disabled={isSubmitting}
         >
           {isSubmitting ? (
-            <>{type === "edit" ? "Saving..." : "Creating"}</>
+            <>{type === "Edit" ? "Saving..." : "Creating"}</>
           ) : (
-            <>{type === "edit" ? "Save" : "Create Article"}</>
+            <>{type === "Edit" ? "Save" : "Create Article"}</>
           )}
         </Button>
       </form>

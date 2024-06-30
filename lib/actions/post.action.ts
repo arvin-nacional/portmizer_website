@@ -1,6 +1,8 @@
 "use server";
 
 import {
+  DeletePostParams,
+  EditPostParams,
   GetPostsParams,
   TagWithPosts,
   addPostParams,
@@ -184,5 +186,42 @@ export async function getRelatedPosts(
   } catch (error) {
     console.error("Error fetching related posts:", error);
     throw error;
+  }
+}
+
+export async function editPost(params: EditPostParams) {
+  try {
+    connectToDatabase();
+
+    const { postId, title, content, path, image } = params;
+    const post = await Post.findById(postId).populate("tags");
+
+    if (!post) {
+      throw new Error("Post not found");
+    }
+
+    post.title = title;
+    post.image = image;
+    post.content = content;
+
+    await post.save();
+
+    revalidatePath(path);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export async function deletePost(params: DeletePostParams) {
+  try {
+    connectToDatabase();
+
+    const { postId, path } = params;
+    await Post.deleteOne({ _id: postId });
+    await Tag.updateMany({ posts: postId }, { $pull: { posts: postId } });
+
+    revalidatePath(path);
+  } catch (error) {
+    console.log(error);
   }
 }
