@@ -4,6 +4,7 @@ import {
   DeletePostParams,
   EditPostParams,
   GetPostsParams,
+  GetRecentPostParams,
   TagWithPosts,
   addPostParams,
   getPostByIdParams,
@@ -125,10 +126,10 @@ export async function getPostById(params: getPostByIdParams) {
   }
 }
 
-export async function getRecentPosts(params: GetPostsParams) {
+export async function getRecentPosts(params: GetRecentPostParams) {
   try {
     connectToDatabase();
-    const { searchQuery, filter } = params;
+    const { searchQuery, filter, postId } = params;
 
     const query: FilterQuery<typeof Post> = {};
 
@@ -139,10 +140,24 @@ export async function getRecentPosts(params: GetPostsParams) {
       ];
     }
 
-    const posts = await Post.find(query)
+    let posts = await Post.find(query)
       .populate({ path: "tags", model: Tag })
       .sort({ createdAt: -1 }) // Sort by creation date in descending order
-      .limit(4); // Limit to 4 posts
+      .limit(5); // Limit to 5 posts to ensure we have 4 after filtering
+
+    // Filter out the post with the given postId
+    posts = posts.filter((post) => post._id.toString() !== postId);
+
+    // If the number of posts is less than 4 after filtering, get more posts
+    if (posts.length < 4) {
+      const additionalPosts = await Post.find(query)
+        .populate({ path: "tags", model: Tag })
+        .sort({ createdAt: -1 })
+        .skip(5) // Skip the first 5 posts we already retrieved
+        .limit(4 - posts.length); // Limit to the number of posts needed to reach 4
+
+      posts = posts.concat(additionalPosts);
+    }
 
     return { posts };
   } catch (error) {

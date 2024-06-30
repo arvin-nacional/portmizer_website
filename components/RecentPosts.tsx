@@ -4,8 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const RecentPosts = async () => {
-  const result = await getRecentPosts({});
+interface Props {
+  postId: string;
+}
+
+const RecentPosts = async ({ postId }: Props) => {
+  const result = await getRecentPosts({ postId });
   return (
     <div>
       <p className="base-bold mb-5">Recent Posts</p>

@@ -48,6 +48,13 @@ export interface GetPostsParams {
   searchQuery?: string;
   filter?: string;
 }
+export interface GetRecentPostParams {
+  page?: number;
+  pageSize?: number;
+  searchQuery?: string;
+  filter?: string;
+  postId?: string;
+}
 
 export interface getPostByIdParams {
   postId: string;

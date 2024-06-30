@@ -44,7 +44,7 @@ const page = async ({ params }: ParamsProps) => {
               {/* <p className="paragraph-regular mt-10">{details.content}</p> */}
             </div>
             <div className="col-span-1 flex flex-col gap-10 max-md:col-span-1">
-              <RecentPosts />
+              <RecentPosts postId={params.id} />
               <RelatedPosts currentPostId={params.id} tagIds={tagArr} />
             </div>
           </div>

@@ -18,6 +18,7 @@ import {
 import MobileNav from "./MobileNav";
 import { company, products, services } from "@/constants";
 import { Button } from "@/components/ui/button";
+import { SignedIn, UserButton } from "@clerk/nextjs";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -178,7 +179,22 @@ const Navbar = () => {
             Contact Us
           </Button>
         </Link>
-        <MobileNav />
+        <div className="flex-between gap-5">
+          <SignedIn>
+            <UserButton
+              afterSignOutUrl="/"
+              appearance={{
+                elements: {
+                  avatarBox: "h-10 w-10",
+                },
+                variables: {
+                  colorPrimary: "#ff7000",
+                },
+              }}
+            />
+          </SignedIn>
+          <MobileNav />
+        </div>
       </div>
     </nav>
   );
