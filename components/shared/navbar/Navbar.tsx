@@ -18,7 +18,8 @@ import {
 import MobileNav from "./MobileNav";
 import { company, products, services } from "@/constants";
 import { Button } from "@/components/ui/button";
-import { SignedIn, UserButton } from "@clerk/nextjs";
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -181,6 +182,14 @@ const Navbar = () => {
               Contact Us
             </Button>
           </Link>
+          <SignedOut>
+            <Link href="/sign-in" className="max-lg:hidden">
+              <Avatar>
+                <AvatarImage src="/assets/images/default_user.svg" />
+                <AvatarFallback>PPC</AvatarFallback>
+              </Avatar>
+            </Link>
+          </SignedOut>
           <SignedIn>
             <UserButton
               afterSignOutUrl="/"

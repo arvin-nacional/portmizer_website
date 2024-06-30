@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function SignInForm() {
   const { isLoaded, signIn, setActive } = useSignIn();
@@ -55,11 +57,22 @@ export default function SignInForm() {
 
   return (
     <div className="flex justify-center bg-light-400 h-screen w-full items-center">
-      <div className=" shadow-light500_darknone background-light900_dark200 rounded-lg p-6">
+      <div className=" shadow-light500_darknone background-light900_dark200 rounded-lg ">
         <form className="background-light900_dark200  w-[350px]  p-6">
-          <h1 className="h3-semibold pb-3 text-primary-500">
-            Portmizer Website Login
-          </h1>
+          <div className="flex justify-center flex-col items-center">
+            <Link href="/">
+              <Image
+                src="/assets/images/logo_colored.svg"
+                width={280}
+                height={60}
+                alt="logo"
+                className="mb-5"
+              />
+            </Link>
+
+            {/* <h1 className="h3-semibold pb-3 text-primary-500">Login</h1> */}
+          </div>
+
           {error && <Label className="mb-4 text-red-500">{error}</Label>}
           <div>
             <Label htmlFor="email">Email</Label>
@@ -82,10 +95,10 @@ export default function SignInForm() {
           <Button
             onClick={handleSubmit}
             variant="default"
-            className="primary-gradient  mt-5 rounded-lg border-none text-light-900"
+            className="bg-primary-500 hover:bg-primary-300 w-full mt-5 rounded-lg border-none text-light-900"
             disabled={isSubmitting}
           >
-            {isSubmitting ? "Signing In .." : "Sign In"}
+            {isSubmitting ? "Signing In..." : "Sign In"}
           </Button>
         </form>
       </div>
