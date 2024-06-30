@@ -11,6 +11,7 @@ export default function SignInForm() {
   const [emailAddress, setEmailAddress] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const router = useRouter();
+  const [error, setError] = useState<string | null>(null); // Add this line
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -38,6 +39,7 @@ export default function SignInForm() {
       }
     } catch (err: any) {
       console.error("error", err.errors[0].longMessage);
+      setError(err.errors[0].longMessage); // Set the error message
     } finally {
       setIsSubmitting(false);
     }
@@ -58,6 +60,7 @@ export default function SignInForm() {
           <h1 className="h3-semibold pb-3 text-primary-500">
             Portmizer Website Login
           </h1>
+          {error && <Label className="mb-4 text-red-500">{error}</Label>}
           <div>
             <Label htmlFor="email">Email</Label>
             <Input

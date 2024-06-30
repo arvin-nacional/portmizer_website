@@ -174,12 +174,13 @@ const Navbar = () => {
             </div>
           </NavigationMenuList>
         </NavigationMenu>
-        <Link href="/contact" className="max-lg:hidden">
-          <Button className="text-primary-500 bg-white hover:bg-gradient-to-br  focus:outline-none dark:focus:ring-green-800 font-medium rounded-3xl text-sm px-6 py-2.5 text-center text-nowrap hover:bg-white">
-            Contact Us
-          </Button>
-        </Link>
-        <div className="flex-between gap-5">
+
+        <div className="flex justify-between gap-5">
+          <Link href="/contact" className="max-lg:hidden">
+            <Button className="text-primary-500 bg-white hover:bg-gradient-to-br  focus:outline-none dark:focus:ring-green-800 font-medium rounded-3xl text-sm px-6 py-2.5 text-center text-nowrap hover:bg-white">
+              Contact Us
+            </Button>
+          </Link>
           <SignedIn>
             <UserButton
               afterSignOutUrl="/"
