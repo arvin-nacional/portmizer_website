@@ -2,9 +2,13 @@ import { servicesCard } from "@/constants";
 import React from "react";
 import ProductCard from "./ui/productCard";
 
-const HomeServices = () => {
+interface Props {
+  styles?: string;
+}
+
+const HomeServices = ({ styles }: Props) => {
   return (
-    <section className="bg-gray-100 flex items-center justify-center px-16 py-20 max-sm:py-5 max-md:px-5 sm:px-14">
+    <section className=" flex items-center justify-center px-16 py-20 max-sm:py-5 max-md:px-5 sm:px-14">
       <div className="w-[1200px] max-w-full pb-6 max-md:mt-10 gap-10  align-top px-2">
         <div>
           <h3 className="h2-bold text-dark-500 mb-2">

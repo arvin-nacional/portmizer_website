@@ -18,6 +18,8 @@ import { addSubscriber } from "@/lib/actions/subscriber.action";
 import { usePathname } from "next/navigation";
 import { toast } from "../ui/use-toast";
 
+import emailjs from "@emailjs/browser";
+
 const Subscriber = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const pathname = usePathname();
@@ -35,6 +37,18 @@ const Subscriber = () => {
       // Do something with the form values.
       setIsSubmitting(true);
       await addSubscriber({ email: values.email, path: pathname });
+
+      // Send an email using EmailJS
+      const templateParams = {
+        email: values.email,
+      };
+
+      await emailjs.send(
+        "service_b6l9gps", // Replace with your EmailJS service ID
+        "template_aic58cb", // Replace with your EmailJS template ID
+        templateParams,
+        "sFrbXUD59kHipU2cg" // Replace with your EmailJS user ID
+      );
       console.log(values);
     } catch (error) {
       console.log(error);

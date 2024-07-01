@@ -79,7 +79,7 @@ export async function createPost(params: addPostParams) {
 export async function getPosts(params: GetPostsParams) {
   try {
     connectToDatabase();
-    const { searchQuery, filter, page = 1, pageSize = 9 } = params;
+    const { searchQuery, filter, page = 1, pageSize = 6 } = params;
 
     // Calculcate the number of posts to skip based on the page number and page size
     const skipAmount = (page - 1) * pageSize;
@@ -98,6 +98,7 @@ export async function getPosts(params: GetPostsParams) {
     const posts = await Post.find(query)
       .populate({ path: "tags", model: Tag })
       .skip(skipAmount)
+      .sort({ createdAt: -1 })
       .limit(pageSize);
 
     const totalPosts = await Post.countDocuments(query);

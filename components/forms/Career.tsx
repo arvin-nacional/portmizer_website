@@ -27,6 +27,7 @@ import { usePathname } from "next/navigation";
 import { toast } from "../ui/use-toast";
 import { Textarea } from "../ui/textarea";
 import { addCareerForm } from "@/lib/actions/career.action";
+import emailjs from "@emailjs/browser";
 
 const Career = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -56,6 +57,23 @@ const Career = () => {
         typeOfPosition: values.typeOfPosition,
         path: pathname,
       });
+
+      // Send an email using EmailJS
+      const templateParams = {
+        fullName: values.fullName,
+        email: values.email,
+        contactNumber: values.contactNumber,
+        message: values.message,
+        typeOfPosition: values.typeOfPosition,
+      };
+
+      await emailjs.send(
+        "service_b6l9gps", // Replace with your EmailJS service ID
+        "template_t4189v4", // Replace with your EmailJS template ID
+        templateParams,
+        "sFrbXUD59kHipU2cg" // Replace with your EmailJS user ID
+      );
+
       console.log(values);
       toast({
         variant: "default",
@@ -71,16 +89,7 @@ const Career = () => {
       });
       throw error;
     } finally {
-      setTimeout(() => {
-        setIsSubmitting(false);
-        // 3. Clear the form after submitting.
-        form.reset();
-        // toast({
-        //   variant: "default",
-        //   title: "Submitted",
-        //   description: "Message has been submitted. Thank you!",
-        // });
-      }, 1000);
+      setIsSubmitting(false);
     }
   }
 

@@ -27,7 +27,7 @@ import { usePathname } from "next/navigation";
 import { toast } from "../ui/use-toast";
 import { Textarea } from "../ui/textarea";
 import { addContact } from "@/lib/actions/contact.action";
-
+import emailjs from "@emailjs/browser";
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const pathname = usePathname();
@@ -56,6 +56,21 @@ const Contact = () => {
         typeOfService: values.typeOfService,
         path: pathname,
       });
+
+      const templateParams = {
+        fullName: values.fullName,
+        email: values.email,
+        contactNumber: values.contactNumber,
+        message: values.message,
+        typeOfService: values.typeOfService,
+      };
+      await emailjs.send(
+        "service_strlo89", // Replace with your EmailJS service ID
+        "template_7bfrfe4", // Replace with your EmailJS template ID
+        templateParams,
+        "user_4DxnHbW519nezT1DFNAOA" // Replace with your EmailJS user ID
+      );
+
       console.log(values);
       toast({
         variant: "default",

@@ -16,7 +16,7 @@ const Page = () => {
       <CoreValues />
       <HomeAbout />
       <HomeProducts />
-      <HomeServices />
+      <HomeServices styles="bg-gray-100" />
       <Clients />
       <Partners />
       <Testimonials

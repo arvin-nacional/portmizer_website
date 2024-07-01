@@ -624,27 +624,27 @@ export const kalmarProductCard: ProductCardProps[] = [
     title: "Empty Container Handler",
     caption:
       "Kalmar's empty container handlers enhance container handling efficiency. Our customizable solutions include single container stackers (8-11 tonnes, 4-8 high) and double container stackers (10-11 tonnes).",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/empty-container-handler.jpg",
   },
   {
     link: "/products/kalmar/forklift-trucks",
     title: "Forklift Trucks",
     caption:
       "Kalmar has been the preferred brand among quality-aware forklift truck drivers and owners. The trucks are renowned and appreciated for their outstanding efficiency, safety, reliability and of course their low operating cost.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/forklift-trucks.jpg",
   },
   {
     link: "/products/kalmar/trailer-tractor",
     title: "Trailer Tractor",
     caption:
       "Solutions for port, terminal, logistics, industrial and intermodal applications.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/kalmar-t2-terminal-tractor.jpg",
   },
   {
     link: "/products/kalmar/kalmar-insight",
     title: "Kalmar Insight",
     caption: "Performance Management Tool for cargo handling operations.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/insight.jpg",
   },
 ];
 
@@ -653,35 +653,35 @@ export const kalmarReachStackerCard: ProductDetailsProps[] = [
     title: "Kalmar Essential Reachstacker",
     caption:
       "Kalmar Essential reachstacker DRU450 is a reliable, robust and highly efficient machine. With the Essential DRU reachstacker you will get more for your money without compromising on quality.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/essential-reachstacker.jpg",
   },
   {
     title: "Kalmar Empty and Semi-laden Container Reachstacker",
     caption:
       "The Kalmar Reachstacker DRG100-140 for empty and semi-laden containers can handle loads up to 14 tonnes, stacking them up to eight high and three deep. This reach stacker is able to handle a wide variety of containers precisely and safely even in confined spaces.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/emtpy-and-semi-laden.jpg",
   },
   {
     title: "Kalmar Gloria Reachstacker ",
     caption: "Meet the latest generation of Kalmar Reachstacker!",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/gloria.jpg",
   },
   {
     title: "Kalmar Super Gloria Reachstacker",
     caption:
       "The Kalmar Super Gloria Reachstacker is a real heavy lifter, able to handle loads up to 130 tonnes when working solo or over 260 tonnes when working in tandem with another Super Gloria Reachstacker.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/super-gloria.jpg",
   },
   {
     title: "Kalmar Electric Reachstacker ",
     caption: "Shifting to electric? See our Kalmar Electric Reachstacker now!",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/electric.jpg",
   },
   {
     title: "Kalmar Eco Reachstacker",
     caption:
       "The Kalmar Eco Reachstacker provides you with an eco-efficient solution that is guaranteed to use significantly less fuel than other reachstackers.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/eco.jpg",
   },
 ];
 
@@ -690,25 +690,25 @@ export const kalmarEmptyContainerHandler: ProductDetailsProps[] = [
     title: "Essential Empty Container Handler DCU80-100",
     caption:
       "Reliable and efficient, designed for handling empty containers with lifting capacities of 8 to 10 tonnes.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/dcu.jpg",
   },
   {
     title: "Empty Container Handler DCG80-110",
     caption:
       "Versatile and powerful, offering lifting capacities of 8 to 11 tonnes for enhanced container handling efficiency.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/dcg.jpg",
   },
   {
     title: "Electric Empty Container Handler ECG70",
     caption:
       "Eco-friendly and efficient, this electric handler offers a 7-tonne lifting capacity, reducing emissions and operational costs.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/electric-containerhandler.jpg",
   },
   {
     title: "Loaded Container Handlers",
     caption:
       "Robust and high-performance handlers designed to manage fully loaded containers, ensuring optimal productivity and reliability.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/loaded-container-handlers.jpg",
   },
 ];
 export const kalmarForkliftTrucks: ProductDetailsProps[] = [
@@ -716,25 +716,25 @@ export const kalmarForkliftTrucks: ProductDetailsProps[] = [
     title: "Medium Forklift Trucks 9-18 ton",
     caption:
       "Durable and versatile forklifts designed for medium-duty applications, with lifting capacities from 9 to 18 tonnes.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/medium.jpg",
   },
   {
     title: "Medium Electric Forklift Trucks 9-18 ton",
     caption:
       "Efficient and eco-friendly electric forklifts, offering the same 9 to 18 tonnes lifting capacities with reduced emissions.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/medium-electric.jpg",
   },
   {
     title: "Heavy Electric Forklift Trucks 18-33 ton",
     caption:
       "Powerful electric forklifts for heavy-duty tasks, providing 18 to 33 tonnes lifting capacities while minimizing environmental impact.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/heavy-electric.jpg",
   },
   {
     title: "Heavy Forklift Trucks 18-54 ton",
     caption:
       "Robust forklifts capable of handling heavy loads, with lifting capacities ranging from 18 to 54 tonnes",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/heavy.jpeg",
   },
 ];
 
@@ -743,32 +743,32 @@ export const kalmarTrailerTractor: ProductDetailsProps[] = [
     title: "Kalmar Essential Terminal Tractor TL2, Shunt Truck and Yard Truck",
     caption:
       "Built on tested and proven platform, so you get a reliable and robust machine that can handle the harshest condition.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/essential-terminal-tractor.jpg",
   },
   {
     title:
       "Heavy Terminal Tractor TR618i, TT618i, TRL618i, RoRo Tractor, Shunt Truck and Yard Truck",
     caption:
       "The Kalmar Heavy Terminal Tractors are robust, reliable and have an excellent performance when moving heavy loads in harsh port conditions.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/heavy-terminal-tractor.jpg",
   },
   {
     title: "Kalmar Ottawa T2 Terminal Tractor, Shunt Truck and Yard Truck",
     caption:
       "The Ottawa T2 Terminal Tractor is the latest generation machine from the creator of the terminal tractor in 1958. Designed to bring order, control and efficiency to your trailer handling.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/kalmar ottawa.jpg",
   },
   {
     title: "Kalmar T2i Terminal Tractor",
     caption:
       "Kalmar’s smartest terminal tractor yet and comes as a complete package.",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/kalmar-terminal-tractor-t2i.jpg",
   },
   {
     title: "Kalmar TX Electrical Terminal Tractor",
     caption:
       "TX Electric Yard Truck powered by Lithium-ion batteries can operates up to 22 hours on a single charge and be recharged in two hours",
-    image: "/assets/images/home-product-kalmar.jpg",
+    image: "/assets/images/kalmar/kalmar-tx.jpg",
   },
 ];
 
@@ -812,35 +812,35 @@ export const tecContainerProductCard: ProductCardProps[] = [
     title: "Reachstacker Attachments",
     caption:
       "Versatile attachments enhancing the functionality and efficiency of your reachstacker.",
-    image: "/assets/images/home-product-tecContainer.jpg",
+    image: "/assets/images/tec-container/image1.jpg",
   },
   {
     link: "/products/tec-container/overheight-frame",
     title: "Overheight Frames",
     caption:
       "Specialized frames for handling oversized containers securely and efficiently.",
-    image: "/assets/images/home-product-tecContainer.jpg",
+    image: "/assets/images/tec-container/overheight-1.jpg",
   },
   {
     link: "/products/tec-container/spreader-beams",
     title: "Spreader Beams / Lifting Beams",
     caption:
       "Durable beams designed for lifting and handling various heavy loads.",
-    image: "/assets/images/home-product-tecContainer.jpg",
+    image: "/assets/images/tec-container/spreader-beams-1.jpg",
   },
   {
     link: "/products/tec-container/forklift-truck-attachments",
     title: "Forklift Truck Attachments",
     caption:
       "Innovative attachments to expand the capabilities of your forklift trucks.",
-    image: "/assets/images/home-product-tecContainer.jpg",
+    image: "/assets/images/tec-container/hook-1.jpg",
   },
   {
     link: "/products/tec-container/lashing-cages",
     title: "Lashing Cages",
     caption:
       "Safe and sturdy cages for securing and handling cargo during transportation.",
-    image: "/assets/images/home-product-tecContainer.jpg",
+    image: "/assets/images/tec-container/gondola-safety-cage.png",
   },
 ];
 
@@ -849,19 +849,19 @@ export const tecContainerSpreaders: ProductDetailsProps[] = [
     title: "Semi Automatic Spreaders",
     caption:
       "Newly designed floating twist-locks that can be easily removed and replaced when they are damaged",
-    image: "/assets/images/home-product-tecContainer.jpg",
+    image: "/assets/images/tec-container/semiautomatic_spreaders.jpg",
   },
   {
     title: "Easy Spreaders",
     caption:
       "Ready for non-intensive use and suitable for all container types. Available in door and outdoor versions.",
-    image: "/assets/images/home-product-tecContainer.jpg",
+    image: "/assets/images/tec-container/easy-spreaders.jpg",
   },
   {
     title: "Spreaders for Indoor Use",
     caption:
       "Semi-automatic or manually operated for all kinds of containers with short wires or directly linked ot the hook of the crane.",
-    image: "/assets/images/home-product-tecContainer.jpg",
+    image: "/assets/images/tec-container/easy_spreaders_indoors.jpg",
   },
 ];
 export const tecContainerReachstackerAttachments: ProductDetailsProps[] = [
