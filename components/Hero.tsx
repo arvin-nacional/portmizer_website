@@ -17,7 +17,7 @@ import { heroServices, products } from "@/constants";
 
 const Hero = () => {
   const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true })
+    Autoplay({ delay: 7000, stopOnInteraction: false })
   );
   return (
     <div className="w-full h-screen flex justify-center items-center overflow-hidden ">

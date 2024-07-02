@@ -485,19 +485,19 @@ export const hiringProcess: HiringProcessProps[] = [
     image: "/assets/icons/hiringProcess.svg",
     title: "Assessment",
     caption:
-      "Discover your fit. Our assessments reveal your strengths and match you with the perfect role. Let's unlock your potential together.",
+      "Demonstrate your expertise through a brief, focused assessment designed to highlight your skills.",
   },
   {
     image: "/assets/icons/hiringProcess.svg",
     title: "Interview",
     caption:
-      "Discover your fit. Our assessments reveal your strengths and match you with the perfect role. Let's unlock your potential together.",
+      "Engage in a meaningful conversation with our team to explore your background and fit for the role.",
   },
   {
     image: "/assets/icons/hiringProcess.svg",
     title: "Get Hired!",
     caption:
-      "Discover your fit. Our assessments reveal your strengths and match you with the perfect role. Let's unlock your potential together.",
+      "Accept our offer and become a valued member of our dynamic and innovative team.",
   },
 ];
 
