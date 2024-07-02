@@ -139,51 +139,51 @@ export const footerLinks: MobileNavLinks[] = [
 
 export const testimonialData: TestimonialsProps[] = [
   {
-    testimonialThumb: "/assets/images/testimonial-image2.svg",
+    testimonialThumb: "/assets/images/testimonials/man1.svg",
     testimonialText:
-      "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
-    avatarName: "John Doe",
-    avatarDesignation: "Principal Solution Architect",
+      "Portmizer Philippines Corporation has been a game-changer for our operations. Their efficient and reliable service has significantly improved our productivity. We can always count on their high-quality equipment and support.",
+    avatarName: "John D.",
+    avatarDesignation: "Shipping Manager",
     ratings: "5",
   },
   {
-    testimonialThumb: "/assets/images/testimonial-image2.svg",
+    testimonialThumb: "/assets/images/testimonials/woman1.svg",
     testimonialText:
-      "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
-    avatarName: "John Doe",
-    avatarDesignation: "Principal Solution Architect",
+      "We've been working with Portmizer for years, and their commitment to excellence is unparalleled. The preventive maintenance and performance upgrades they offer have kept our operations running smoothly without any major hiccups.",
+    avatarName: "Maria S.",
+    avatarDesignation: "Terminal Operations Director",
     ratings: "5",
   },
   {
-    testimonialThumb: "/assets/images/testimonial-image2.svg",
+    testimonialThumb: "/assets/images/testimonials/man2.svg",
     testimonialText:
-      "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
-    avatarName: "John Doe",
-    avatarDesignation: "Principal Solution Architect",
+      "The training programs provided by Portmizer are comprehensive and have greatly enhanced our team's capabilities. Their hands-on approach ensures that our staff is well-prepared to handle any situation efficiently.",
+    avatarName: "Carlos M.",
+    avatarDesignation: "Operations Supervisor",
     ratings: "5",
   },
   {
-    testimonialThumb: "/assets/images/testimonial-image2.svg",
+    testimonialThumb: "/assets/images/testimonials/woman2.svg",
     testimonialText:
-      "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
-    avatarName: "John Doe",
-    avatarDesignation: "Principal Solution Architect",
+      "Portmizer’s genuine spare parts have extended the lifespan of our equipment. We no longer worry about unexpected breakdowns, knowing we have reliable parts on hand. This has saved us both time and money.",
+    avatarName: "Emily T.",
+    avatarDesignation: "Maintenance Manager",
     ratings: "5",
   },
   {
-    testimonialThumb: "/assets/images/testimonial-image2.svg",
+    testimonialThumb: "/assets/images/testimonials/man3.svg",
     testimonialText:
-      "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
-    avatarName: "John Doe",
-    avatarDesignation: "Principal Solution Architect",
+      "The performance upgrade and conversion services from Portmizer have taken our operations to the next level. Their expertise in the field is evident in the quality of work they deliver. We highly recommend their services.",
+    avatarName: "James L.",
+    avatarDesignation: "Container Yard Manager",
     ratings: "5",
   },
   {
-    testimonialThumb: "/assets/images/testimonial-image2.svg",
+    testimonialThumb: "/assets/images/testimonials/woman3.svg",
     testimonialText:
-      "Arvin's expertise in web development is unmatched. He seamlessly translated our ideas into a user-friendly and visually appealing website. His attention to detail and commitment to excellence are commendable.",
-    avatarName: "John Doe",
-    avatarDesignation: "Principal Solution Architect",
+      "Portmizer's customer service is second to none. They are always responsive and ready to assist with any issues we encounter. Their dedication to customer satisfaction truly sets them apart in the industry.",
+    avatarName: "Anna R.",
+    avatarDesignation: "Logistics Coordinator",
     ratings: "5",
   },
 ];
