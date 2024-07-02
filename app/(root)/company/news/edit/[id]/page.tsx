@@ -8,7 +8,7 @@ const Page = async ({ params }: ParamsProps) => {
   const result = await getPostById({ postId: params.id });
   return (
     <div>
-      <Header title="Edit Post" img="/assets/images/career-img.png" />
+      <Header title="Edit Post" img="/assets/images/hero-image-2.jpg" />
       <section className="background-light400_dark300 flex items-center justify-center px-16 sm:py-20 max-md:px-5">
         <div className="w-[1200px] max-w-full flex justify-center pb-6 max-md:mt-10 flex-col items-center">
           <h4 className="base-bold mb-10">Edit an Article</h4>

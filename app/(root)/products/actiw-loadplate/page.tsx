@@ -13,7 +13,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <Header title="Products" img="/assets/images/about-image.jpg" />
+      <Header title="Products" img="/assets/images/hero-image-2.jpg" />
       <ProductsPage
         title="Actiw Loadplate"
         caption="Actiw LoadPlate is a fast and proven, one shot container loading solution for regular, non-modified cargo space. Stop losing money. Get payback on loading containers with LoadPlate.

@@ -9,7 +9,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <Header title="Products" img="/assets/images/about-image.jpg" />
+      <Header title="Products" img="/assets/images/hero-image-2.jpg" />
       <ProductsPage
         title="Dafo Vehicle Fire Protection"
         caption="Dafo offers a complete range of extinguishing systems for heavy vehicles, hips and buses. Fires in vehicles often take hold very quickly and are hard to extinguish with a handheld extinguisher. A correctly dimensioned extinguishing system offers you fast, effective protection that limits the consequences of a fire."

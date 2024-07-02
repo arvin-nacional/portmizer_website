@@ -6,7 +6,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <Header title="Services" img="/assets/images/about-image.jpg" />
+      <Header title="Services" img="/assets/images/hero-image-2.jpg" />
       <HomeServices />
 
       <CTA

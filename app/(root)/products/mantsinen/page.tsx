@@ -13,7 +13,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <Header title="Products" img="/assets/images/about-image.jpg" />
+      <Header title="Products" img="/assets/images/hero-image-2.jpg" />
       <ProductsPage
         title="Mantsinen - Mobile Harbor Crane"
         caption="Mantsinen Group Ltd. offers customers comprehensive logistic services as well as design and manufacture material handling machines and hydraulic harbour cranes for handling of different materials."

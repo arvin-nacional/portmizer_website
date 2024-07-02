@@ -16,7 +16,7 @@ const Page = () => {
 
   return (
     <div>
-      <Header title="Gallery" img="/assets/images/about-image.jpg" />
+      <Header title="Gallery" img="/assets/images/hero-image-2.jpg" />
       <section className="flex items-center justify-center px-16 sm:py-20 max-md:px-5">
         <div className="w-[1200px] max-w-full flex justify-center pb-6 max-md:mt-10 flex-col items-center ">
           <div className="flex flex-wrap gap-5 w-[100%] justify-center">

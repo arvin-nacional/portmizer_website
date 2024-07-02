@@ -9,7 +9,7 @@ import React from "react";
 const Page = () => {
   return (
     <div>
-      <Header title="Locations" img="/assets/images/about-image.jpg" />
+      <Header title="Locations" img="/assets/images/hero-image-2.jpg" />
       <section className="flex items-center justify-center px-16 max-md:px-5 mb-10">
         <div className="w-[1200px] max-w-full flex justify-center pb-6 flex-col items-center gap-10">
           <div className="flex gap-20 items-center max-md:flex-col mt-10">
