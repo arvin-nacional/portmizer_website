@@ -43,7 +43,7 @@ const Clients = () => {
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex >= clientLogo.length - 3 ? 0 : prevIndex + 1
+      prevIndex >= clientLogo.length - 6 ? 0 : prevIndex + 1
     );
   };
 
@@ -88,9 +88,9 @@ const Clients = () => {
               <div
                 className="arrow-circle size-12 max-sm:size-8 cursor-pointer"
                 style={{
-                  opacity: currentIndex === clientLogo.length - 1 ? 0.5 : 1,
+                  opacity: currentIndex === clientLogo.length - 6 ? 0.5 : 1,
                   pointerEvents:
-                    currentIndex === clientLogo.length - 1 ? "none" : "auto",
+                    currentIndex === clientLogo.length - 6 ? "none" : "auto",
                 }}
                 onClick={handleNext}
               >

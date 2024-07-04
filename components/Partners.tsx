@@ -61,7 +61,7 @@ const Partners = () => {
             </h1>
           </div>
           <div className="flex items-end justify-end">
-            <div className="mt-12 flex flex-row justify-end gap-5">
+            <div className="mt-12 flex flex-row justify-end gap-5 xl:hidden">
               <div
                 className="arrow-circle size-12 max-sm:size-8 cursor-pointer"
                 onClick={handlePrev}
