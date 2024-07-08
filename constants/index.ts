@@ -128,7 +128,7 @@ export const footerLinks: MobileNavLinks[] = [
     title: "Services",
   },
   {
-    link: "/locations",
+    link: "/location",
     title: "Locations",
   },
   {
