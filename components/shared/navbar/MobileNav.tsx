@@ -157,14 +157,16 @@ const NavContent = () => {
           Locations
         </Link>
       </SheetClose>
-      <Link href="/contact">
-        <button
-          type="button"
-          className="text-white bg-gradient-to-r from-primary-500 to-primary-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-6 py-2.5 text-center me-2 mb-2 mt-10"
-        >
-          Contact Us
-        </button>
-      </Link>
+      <SheetClose asChild>
+        <Link href="/contact">
+          <button
+            type="button"
+            className="text-white bg-gradient-to-r from-primary-500 to-primary-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-6 py-2.5 text-center me-2 mb-2 mt-10"
+          >
+            Contact Us
+          </button>
+        </Link>
+      </SheetClose>
     </section>
   );
 };
@@ -202,7 +204,7 @@ const MobileNav = () => {
         </div>
 
         <div className="flex gap-5 p-6">
-          <a href="https://www.facebook.com/rvinpaul" target="_blank">
+          <a href="https://www.facebook.com/Portmizer" target="_blank">
             <Image
               src="/assets/icons/facebook_icon.svg"
               width={20}
@@ -211,7 +213,7 @@ const MobileNav = () => {
               // className="invert-colors"
             />
           </a>
-          <a href="https://www.instagram.com/rvinpaul" target="_blank">
+          <a href="https://www.instagram.com/portmizercorp/" target="_blank">
             <Image
               src="/assets/icons/instagram_icon.svg"
               width={20}
@@ -220,7 +222,10 @@ const MobileNav = () => {
               // className="invert-colors"
             />
           </a>
-          <a href="https://www.linkedin.com/rvinpaul" target="_blank">
+          <a
+            href="https://www.linkedin.com/company/portmizer-philippines-corporation/about/"
+            target="_blank"
+          >
             <Image
               src="/assets/icons/linkedin_icon.svg"
               width={20}
