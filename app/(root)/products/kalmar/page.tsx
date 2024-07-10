@@ -15,7 +15,7 @@ const page = () => {
               solutions in ports and terminals where containers are handled by
               ship-to-shore cranes, yard cranes, shuttle and straddle carriers,
               reachstackers and empty container handlers."
-        logo="/assets/logo/kalmar.jpg"
+        logo="/assets/logo/kalmar-new.png"
       />
       <section className="flex items-center justify-center px-16 max-md:px-5 mb-10">
         <div className="w-[1200px] max-w-full flex justify-center pb-6 max-md:mt-10 flex-col items-center">

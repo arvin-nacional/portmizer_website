@@ -33,6 +33,7 @@
     "lucide-react": "^0.383.0",
     "mongoose": "^8.4.1",
     "next": "14.2.3",
+    "next-cloudinary": "^6.6.2",
     "prismjs": "^1.29.0",
     "query-string": "^9.0.0",
     "react": "^18",

@@ -437,7 +437,7 @@ export const clientLogo: LogoProps[] = [
 ];
 export const partnerLogo: LogoProps[] = [
   {
-    src: "/assets/logo/partner-logo-1.svg",
+    src: "/assets/logo/partner-logo-1.png",
     alt: "Kalmar",
   },
   {

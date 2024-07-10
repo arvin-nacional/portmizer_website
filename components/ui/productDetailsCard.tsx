@@ -8,7 +8,7 @@ const ProductDetailsCard = ({ image, title, caption }: ProductDetailsProps) => {
       <div className="flex flex-col items-center justify-start px-10 py-[21px] text-center hover:shadow-xl transition-shadow duration-300 h-[100%] rounded-3xl max-sm:shadow-xl">
         <Image
           src={image}
-          alt="Product Image"
+          alt={title}
           width={0}
           height={0}
           sizes="100vw"
