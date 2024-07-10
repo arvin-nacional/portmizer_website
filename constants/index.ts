@@ -335,7 +335,7 @@ export const productsCard: ProductCardProps[] = [
     link: "/products/actiw-loadplate",
     title: "Actiw Loadplate",
     caption:
-      "Kalmar offers a wide range of cargo handling solutions and services to ports, terminals, distribution centres and to heavy industry.",
+      "Actiw LoadPlate is a fast and proven, one shot container loading solution for regular, non-modified cargo space.",
     image: "/assets/images/home-product-actiw.jpg",
   },
   {
@@ -860,7 +860,7 @@ export const tecContainerSpreaders: ProductDetailsProps[] = [
   {
     title: "Spreaders for Indoor Use",
     caption:
-      "Semi-automatic or manually operated for all kinds of containers with short wires or directly linked ot the hook of the crane.",
+      "Semi-automatic or manually operated for all kinds of containers with short wires or directly linked to the hook of the crane.",
     image: "/assets/images/tec-container/easy_spreaders_indoors.jpg",
   },
 ];
@@ -970,7 +970,7 @@ export const tecContainerSpreaderBeams: ProductDetailsProps[] = [
   {
     title: "Simple Beam for Shackles",
     caption:
-      "A a specialized solution designed to streamline loading and unloading operations. Suitable for use with single or tandem cranes, this beam offers customizable length and Safe Working Load (SWL), providing versatility to address various lifting challenges efficiently.",
+      "A specialized solution designed to streamline loading and unloading operations. Suitable for use with single or tandem cranes, this beam offers customizable length and Safe Working Load (SWL), providing versatility to address various lifting challenges efficiently.",
     image: "/assets/images/tec-container/simple-beam.png",
   },
   {
