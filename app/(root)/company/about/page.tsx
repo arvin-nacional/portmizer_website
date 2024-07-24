@@ -92,7 +92,7 @@ const Page = () => {
                 after-sales support.
               </p>
               <p className="paragraph-regular mt-5">
-                Its first twelve years of existence was mainly focused on
+                Its first seventeen years of existence was mainly focused on
                 serving the needs of storages and warehouses as well as
                 manufacturing plants with appropriate equipment and technical
                 designs with the end view of achieving higher efficiency and

@@ -52,20 +52,21 @@ export const products: MobileNavLinks[] = [
     title: "Sumitomo Rubber Industries",
   },
   {
-    link: "/products/mantsinen",
-    title: "Mantsinen Mobile Harbor Crane",
+    link: "/products/dafo",
+    title: "Dafo Vehicle Fire Protection",
   },
   {
     link: "/products/tec-container",
     title: "Tec Container",
   },
   {
+    link: "/products/mantsinen",
+    title: "Mantsinen Mobile Harbor Crane",
+  },
+
+  {
     link: "/products/actiw-loadplate",
     title: "Actiw Loadplate",
-  },
-  {
-    link: "/products/dafo",
-    title: "Dafo Vehicle Fire Protection",
   },
 ];
 
@@ -106,7 +107,7 @@ export const services: MobileNavLinks[] = [
   },
   {
     link: "/services/training",
-    title: "Trainings",
+    title: "Maintenance & Operators Training",
   },
 ];
 
@@ -257,7 +258,7 @@ export const heroServices: MobileNavLinks[] = [
   },
   {
     link: "/services/training",
-    title: "Trainings",
+    title: "Maintenance and Operators Training",
   },
 ];
 
@@ -318,11 +319,11 @@ export const productsCard: ProductCardProps[] = [
     image: "/assets/images/home-product-sumitomo.jpg",
   },
   {
-    link: "/products/mantsinen",
-    title: "Mantsinen Mobile Harbor Crane",
+    link: "/products/dafo",
+    title: "Dafo Vehicle Fire Protection",
     caption:
-      "Mantsinen provides a wide range of hydraulic material handlers and complementing attachments.",
-    image: "/assets/images/home-products-mantsinen.jpg",
+      "Dafo offers complete extinguishing systems for heavy vehicles, ships, and buses, providing fast and effective fire protection.",
+    image: "/assets/images/home-product-dafo.jpg",
   },
   {
     link: "/products/tec-container",
@@ -332,18 +333,19 @@ export const productsCard: ProductCardProps[] = [
     image: "/assets/images/home-product-tecContainer.jpg",
   },
   {
+    link: "/products/mantsinen",
+    title: "Mantsinen Mobile Harbor Crane",
+    caption:
+      "Mantsinen provides a wide range of hydraulic material handlers and complementing attachments.",
+    image: "/assets/images/home-products-mantsinen.jpg",
+  },
+
+  {
     link: "/products/actiw-loadplate",
     title: "Actiw Loadplate",
     caption:
       "Actiw LoadPlate is a fast and proven, one shot container loading solution for regular, non-modified cargo space.",
     image: "/assets/images/home-product-actiw.jpg",
-  },
-  {
-    link: "/products/dafo",
-    title: "Dafo Vehicle Fire Protection",
-    caption:
-      "Dafo offers complete extinguishing systems for heavy vehicles, ships, and buses, providing fast and effective fire protection.",
-    image: "/assets/images/home-product-dafo.jpg",
   },
 ];
 
@@ -378,7 +380,7 @@ export const servicesCard: ProductCardProps[] = [
   },
   {
     link: "/services/training",
-    title: "Trainings",
+    title: "Maintenance & Operators Training ",
     caption:
       "Providing expert training programs for safe and efficient equipment operation.",
     image: "/assets/images/services5.svg",
@@ -465,36 +467,47 @@ export const partnerLogo: LogoProps[] = [
 export const careerOpenings: CareerOpeningsProps[] = [
   {
     title: "Admin and Finance Department",
+    location: "Portmizer Philippines Corporation Mandaue City, Cebu",
+    department: "Technicians (Trades & Services)",
+    type: "Full time",
+
     caption:
       "Manages financial operations and administrative tasks. Roles include accountants, financial analysts, and office managers, focusing on budget management, financial reporting, and payroll processing.",
   },
-  {
-    title: "Service Department",
-    caption:
-      "Provides customer support and maintenance. Roles include customer service reps and technical support specialists, focusing on troubleshooting, resolving complaints, and ensuring customer satisfaction.",
-  },
-  {
-    title: "Sales Derpartment",
-    caption:
-      "Drives revenue through selling products or services. Roles include sales reps and account managers, focusing on identifying potential clients, building relationships, and meeting sales targets.",
-  },
+  // {
+  //   title: "Service Department",
+  //   caption:
+  //     "Provides customer support and maintenance. Roles include customer service reps and technical support specialists, focusing on troubleshooting, resolving complaints, and ensuring customer satisfaction.",
+  // },
+  // {
+  //   title: "Sales Derpartment",
+  //   caption:
+  //     "Drives revenue through selling products or services. Roles include sales reps and account managers, focusing on identifying potential clients, building relationships, and meeting sales targets.",
+  // },
 ];
 
 export const hiringProcess: HiringProcessProps[] = [
   {
-    image: "/assets/icons/hiringProcess.svg",
-    title: "Assessment",
-    caption:
-      "Demonstrate your expertise through a brief, focused assessment designed to highlight your skills.",
-  },
-  {
-    image: "/assets/icons/hiringProcess.svg",
-    title: "Interview",
+    image: "/assets/icons/interview.svg",
+    title: "Interviews",
     caption:
       "Engage in a meaningful conversation with our team to explore your background and fit for the role.",
   },
   {
     image: "/assets/icons/hiringProcess.svg",
+    title: "Applicant Assessment",
+    caption:
+      "Once the intervews are completed, company assigns applicant for standardized test and verification of requirements.",
+  },
+  {
+    image: "/assets/icons/hiring.svg",
+    title: "Background Check & Medical",
+    caption:
+      "Employers make sure potential employees are likely to represent the company in professional manner and fit to work.",
+  },
+
+  {
+    image: "/assets/icons/approved.svg",
     title: "Get Hired!",
     caption:
       "Accept our offer and become a valued member of our dynamic and innovative team.",

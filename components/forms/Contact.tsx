@@ -175,7 +175,9 @@ const Contact = () => {
                   <SelectItem value="conversionOverhauling">
                     Conversion/Overhauling
                   </SelectItem>
-                  <SelectItem value="training">Training</SelectItem>
+                  <SelectItem value="training">
+                    Maintenance and Operators Training
+                  </SelectItem>
                 </SelectContent>
               </Select>
               <FormDescription className="body-regular mt-2.5 text-light-500">

@@ -156,11 +156,11 @@ const Career = () => {
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent className="cursor-pointer bg-light-900">
-                  <SelectItem value="adminAndFinance">
-                    Admin and Finance Department
+                  <SelectItem value="fieldServiceTechnician">
+                    Field Service Technician
                   </SelectItem>
-                  <SelectItem value="service">Service Department</SelectItem>
-                  <SelectItem value="sales">Sales Department</SelectItem>
+                  {/* <SelectItem value="service">Service Department</SelectItem>
+                  <SelectItem value="sales">Sales Department</SelectItem> */}
                 </SelectContent>
               </Select>
               <FormDescription className="body-regular mt-2.5 text-light-500">

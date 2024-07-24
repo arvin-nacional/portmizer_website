@@ -97,7 +97,7 @@ const Hero = () => {
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
-                    Only the Best for the Customers
+                    Only the Best for Customers
                   </h1>
 
                   {/* <h2 className="base-medium md:w-1/2 text-light-900 max-sm:paragraph-regular">
@@ -148,7 +148,7 @@ const Hero = () => {
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
-                    Transform Your Port Operations with Cutting-Edge Solutions
+                    Your safety is our priority
                   </h1>
 
                   {/* <h2 className="base-medium md:w-3/4 text-light-900">

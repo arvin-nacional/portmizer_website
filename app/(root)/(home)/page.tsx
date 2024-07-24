@@ -20,7 +20,7 @@ const Page = () => {
       <Clients />
       <Partners />
       <Testimonials
-        title="Testimonial"
+        title="Testimonials"
         caption="What our customer says about us"
         data={testimonialData}
       />

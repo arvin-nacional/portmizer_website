@@ -43,6 +43,9 @@ interface LogoProps {
 interface CareerOpeningsProps {
   title: string;
   caption: string;
+  location: string;
+  type: string;
+  department: string;
 }
 
 interface HiringProcessProps {

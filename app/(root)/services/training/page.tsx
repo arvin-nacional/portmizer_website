@@ -15,7 +15,7 @@ const page = () => {
         <div className="w-[1200px] max-w-full flex justify-center pb-6 max-md:mt-10 flex-col items-center">
           <div className="flex gap-20 items-center max-md:flex-col">
             <div className="flex-1">
-              <h4 className="h2-bold">Training</h4>
+              <h4 className="h2-bold">Maintenance and Operators Training</h4>
               <div className="h-[7px] w-[120px] primary-gradient mt-3"></div>
               <p className="paragraph-regular mt-5">
                 Our comprehensive training programs are designed to equip your
