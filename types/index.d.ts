@@ -55,7 +55,7 @@ interface HiringProcessProps {
 }
 interface LocationProps {
   location: string;
-  address: string;
+  address?: string;
   number: string;
 }
 

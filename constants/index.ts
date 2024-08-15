@@ -525,7 +525,7 @@ export const locations: LocationProps[] = [
     location: "Cebu",
     address:
       "#7 Door 2B Arayat Apartment Mt. Arayat St. Singson Village Brgy Tipolo Mandaue City",
-    number: "02-85245514",
+    number: "032-4214114",
   },
   {
     location: "Laguna",
@@ -535,13 +535,67 @@ export const locations: LocationProps[] = [
   },
   {
     location: "Davao",
-    address:
-      "Door-3 PGJ REALTY, Km. 8 Agusan National Highway, Brgy. Vicente Hizon Sr., Buhangin District, Davao City 8000",
     number: "+63 82 234 6284",
   },
 ];
 
 export const galleryImages: GalleryImages[] = [
+  {
+    src: "/assets/images/gallery/21.jpg",
+    alt: "Gallery Image1",
+  },
+  {
+    src: "/assets/images/gallery/22.jpg",
+    alt: "Gallery Image1",
+  },
+  {
+    src: "/assets/images/gallery/23.jpg",
+    alt: "Gallery Image1",
+  },
+  {
+    src: "/assets/images/gallery/24.jpg",
+    alt: "Gallery Image1",
+  },
+  {
+    src: "/assets/images/gallery/25.jpg",
+    alt: "Gallery Image1",
+  },
+  {
+    src: "/assets/images/gallery/26.jpg",
+    alt: "Gallery Image1",
+  },
+  {
+    src: "/assets/images/gallery/27.jpg",
+    alt: "Gallery Image1",
+  },
+  {
+    src: "/assets/images/gallery/28.jpg",
+    alt: "Gallery Image1",
+  },
+  {
+    src: "/assets/images/gallery/29.jpg",
+    alt: "Gallery Image1",
+  },
+  {
+    src: "/assets/images/gallery/30.jpg",
+    alt: "Gallery Image1",
+  },
+  {
+    src: "/assets/images/gallery/31.jpg",
+    alt: "Gallery Image1",
+  },
+  {
+    src: "/assets/images/gallery/32.jpg",
+    alt: "Gallery Image1",
+  },
+  {
+    src: "/assets/images/gallery/33.jpg",
+    alt: "Gallery Image1",
+  },
+  {
+    src: "/assets/images/gallery/34.jpg",
+    alt: "Gallery Image1",
+  },
   {
     src: "/assets/images/gallery/1.jpg",
     alt: "Gallery Image1",
