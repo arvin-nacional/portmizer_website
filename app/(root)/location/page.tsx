@@ -65,7 +65,9 @@ const Page = () => {
                   <p className="paragraph-medium mt-2">201 - HR</p>
                   <p className="paragraph-medium mt-2">202 - Service</p>
                   <p className="paragraph-medium mt-2">203 - Sales</p>
-                  <p className="paragraph-medium mt-2">204 - SCL</p>
+                  <p className="paragraph-medium mt-2">
+                    204 - Supply Chain & Logistics
+                  </p>
                   <p className="paragraph-medium mt-2">205 - Executive</p>
                   <p className="paragraph-medium mt-2">206 - Conference Room</p>
                 </li>
