@@ -29,7 +29,10 @@ const Footer = () => {
                 // className="invert-colors"
               />
             </a>
-            <a href="https://www.instagram.com/portmizercorp/" target="_blank">
+            <a
+              href="https://www.instagram.com/portmizerhr/?hl=en"
+              target="_blank"
+            >
               <Image
                 src="/assets/icons/instagram_icon.svg"
                 width={20}
