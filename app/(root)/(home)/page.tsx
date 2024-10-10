@@ -19,11 +19,11 @@ const Page = () => {
       <HomeServices styles="bg-gray-100" />
       <Clients />
       <Partners />
-      <Testimonials
+      {/* <Testimonials
         title="Testimonials"
         caption="What our customer says about us"
         data={testimonialData}
-      />
+      /> */}
       <CTA
         title="Want to know more about our Products and Services?"
         action="Ask for a free consult"
