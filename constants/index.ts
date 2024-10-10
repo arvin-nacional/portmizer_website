@@ -362,7 +362,7 @@ export const servicesCard: ProductCardProps[] = [
     title: "Preventive Maintenance",
     caption:
       "Ensuring equipment longevity and reliability through preventive maintenance.",
-    image: "/assets/images/services2.svg",
+    image: "/assets/images/preventive-maintenance.svg",
   },
   {
     link: "/services/performance-upgrade",
@@ -383,7 +383,7 @@ export const servicesCard: ProductCardProps[] = [
     title: "Maintenance & Operators Training ",
     caption:
       "Providing expert training programs for safe and efficient equipment operation.",
-    image: "/assets/images/services5.svg",
+    image: "/assets/images/training.svg",
   },
 ];
 

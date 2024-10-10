@@ -118,6 +118,124 @@ const Page = () => {
                 </Link>
               </div>
             </div>
+            <div className="grid gap-12 grid-cols-3 max-sm:grid-cols-1 max-lg:grid-cols-2 mt-10 p-10 shadow-xl rounded-xl">
+              {/* {careerOpenings.map((component) => (
+                <CareerCard
+                  key={component.title}
+                  title={component.title}
+                  caption={component.caption}
+                />
+              ))} */}
+
+              <div>
+                <div className="flex gap-2">
+                  <Image
+                    src="/assets/icons/engineer.svg"
+                    alt="engineer icon"
+                    width={30}
+                    height={30}
+                    className="mb-5"
+                  />
+                  <p className="h2-bold mb-5">Sales Coordinator</p>
+                </div>
+
+                <p className="paragraph-semibold">
+                  Portmizer Philippines Corporation
+                </p>
+                <p className="paragraph-semibold">Intramuros, Metro Manila</p>
+                <p className="paragraph-semibold">Full time</p>
+
+                <br />
+                <p className="base-bold mb-5">What We're Looking For:</p>
+                <ul className="list-disc">
+                  <li>
+                    Strong administrative and organizational skills with the
+                    ability to multitask and prioritize tasks effectively.
+                  </li>
+                  <li>
+                    Excellent communication and interpersonal skills, both
+                    written and verbal.
+                  </li>
+                  <li>
+                    A customer-focused approach dedicated to providing
+                    outstanding service.
+                  </li>
+                  <li>
+                    Demonstrated experience in a sales support or administrative
+                    capacity, ideally within the sales industry.
+                  </li>
+                  <li>
+                    Ability to work well in a team and collaborate with
+                    cross-functional departments.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p className="base-bold mb-2">Key Responsibilities</p>
+                <ul className="list-disc">
+                  <li>
+                    Offer administrative support to the sales team by scheduling
+                    appointments, organizing client meetings, and managing sales
+                    pipelines.
+                  </li>
+                  <li>
+                    Assist in preparing sales proposals, presentations, and
+                    related sales documentation.
+                  </li>
+                  <li>
+                    Address customer inquiries, respond to requests, and ensure
+                    exceptional customer service.
+                  </li>
+                  <li>
+                    Maintain accurate records of sales activities, orders, and
+                    customer data.
+                  </li>
+                  <li>
+                    Coordinate with marketing, operations, and other departments
+                    to facilitate the sales process.
+                  </li>
+                  <li>
+                    Identify and pursue new business opportunities to drive
+                    sales growth.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p className="base-bold mb-5">Qualifications:</p>
+                <ul className="list-disc">
+                  <li>
+                    Bachelor's degree in Business Administration, majoring in
+                    Marketing Management, or a related field.
+                  </li>
+                  <li>
+                    At least 2-3 years of relevant experience in Sales
+                    Coordination.
+                  </li>
+                  <li>
+                    Strong organizational, interpersonal, and written
+                    communication skills.
+                  </li>
+                  <li>Well organized and keen to details</li>
+                  <li>
+                    Willingness to learn, especially in the heavy equipment
+                    industry.
+                  </li>
+                  <li>Willing to be assigned at Cebu Branch</li>
+
+                  <li>Proficient in Microsoft Office applications. </li>
+                  <li>Open to fresh graduates. </li>
+                  <li>Must be willing to work in Intramuros, Manila.</li>
+                </ul>
+                <Link href="/career-form">
+                  <Button
+                    className="text-primary-500 border-primary-500 hover:outline-none hover:text-white hover:bg-primary-500 mt-5"
+                    variant="outline"
+                  >
+                    Apply Now
+                  </Button>
+                </Link>
+              </div>
+            </div>
 
             <h3 className="h2-bold margin-auto mt-20">Our Hiring Process</h3>
             <h4 className="paragraph-bold">Get hired within the day!</h4>
@@ -135,11 +253,11 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <Testimonials
+      {/* <Testimonials
         title="Testimonials"
         caption="What our employee says about us"
         data={employeeTestimonialData}
-      />
+      /> */}
       <CTA
         title="Embark on a Fulfilling Career Journey"
         action="Apply Now"
