@@ -31,7 +31,7 @@ const Page = () => {
             </div>
             <div className="flex-1">
               <Image
-                src="/assets/images/home-about-image2.svg"
+                src="/assets/images/about-3.svg"
                 width={0}
                 height={0}
                 style={{ width: "100%", height: "500px" }} // optional
@@ -72,7 +72,7 @@ const Page = () => {
             <div className="flex-1 ">
               {" "}
               <Image
-                src="/assets/images/home-about-image2.svg"
+                src="/assets/images/about-1.svg"
                 width={0}
                 height={0}
                 style={{ width: "100%", height: "700px" }} // optional

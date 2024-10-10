@@ -3,6 +3,7 @@ import Image from "next/image";
 import Subscriber from "../forms/Subscriber";
 import { footerLinks } from "@/constants";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 const Footer = () => {
   return (
@@ -101,11 +102,19 @@ const Footer = () => {
           </div>
         </div>
         <div className="pb-12  text-dark-400">
-          <p className="h3-bold ">Subscribe</p>
+          {/* <p className="h3-bold ">Subscribe</p>
           <p className="small-regular mb-3 py-2 ">
             Subscribe to get our latest news and updates.
           </p>
-          <Subscriber />
+          <Subscriber /> */}
+          {/* <Link href="/contact">
+            <Button
+              className="text-primary-500 border-primary-500 hover:outline-none hover:text-white hover:bg-primary-500 mt-5"
+              variant="outline"
+            >
+              Contact Us
+            </Button>
+          </Link> */}
         </div>
       </div>
     </section>

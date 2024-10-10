@@ -13,7 +13,7 @@ const page = () => {
       <ProductsPage
         title="Dafo Vehicle Fire Protection"
         caption="Dafo offers a complete range of extinguishing systems for heavy vehicles, hips and buses. Fires in vehicles often take hold very quickly and are hard to extinguish with a handheld extinguisher. A correctly dimensioned extinguishing system offers you fast, effective protection that limits the consequences of a fire."
-        logo="/assets/logo/dafo.png"
+        logo="/assets/logo/dafo-new.png"
       />
       <section className="flex items-center justify-center px-16 max-md:px-5 mb-10">
         <div className="w-[1200px] max-w-full flex justify-center pb-6 max-md:mt-10 flex-col items-center">

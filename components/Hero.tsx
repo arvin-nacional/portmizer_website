@@ -29,7 +29,7 @@ const Hero = () => {
       >
         <CarouselContent>
           <CarouselItem>
-            <div className="bg-[url('/assets/images/hero-image-1.jpg')] bg-cover bg-center w-full flex justify-center items-center  max-sm:px-12 min-h-[600px]">
+            <div className="bg-[url('/assets/images/slider-1.jpg')] bg-cover bg-center w-full flex justify-center items-center  max-sm:px-12 min-h-[600px]">
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10 max-sm:gap-20">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
