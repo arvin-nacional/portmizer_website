@@ -29,11 +29,12 @@ const Hero = () => {
       >
         <CarouselContent>
           <CarouselItem>
-            <div className="bg-[url('/assets/images/slider-1.jpg')] bg-cover bg-center w-full flex justify-center items-center  max-sm:px-12 min-h-[600px]">
+            <div className="bg-[url('/assets/images/slider-2.jpg')] bg-cover bg-center w-full flex justify-center items-center  max-sm:px-12 min-h-[600px]">
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10 max-sm:gap-20">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
-                    Driving Excellence in Port and Container Handling since 1990
+                    Driving Excellence in Port <br />
+                    and Container Handling since 1990
                   </h1>
 
                   <h2 className="base-medium md:w-1/2 text-light-900 max-sm:paragraph-regular">

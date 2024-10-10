@@ -323,7 +323,7 @@ export const productsCard: ProductCardProps[] = [
     title: "Dafo Vehicle Fire Protection",
     caption:
       "Dafo offers complete extinguishing systems for heavy vehicles, ships, and buses, providing fast and effective fire protection.",
-    image: "/assets/images/home-product-dafo.jpg",
+    image: "/assets/images/dafo-new.png",
   },
   {
     link: "/products/tec-container",

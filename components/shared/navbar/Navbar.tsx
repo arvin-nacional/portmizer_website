@@ -90,12 +90,21 @@ const Navbar = () => {
         )}
       >
         <Link href="/">
-          <Image
-            src="/assets/images/white_logo.svg"
-            width={230}
-            height={60}
-            alt="logo"
-          />
+          {scrolled ? (
+            <Image
+              src="/assets/images/white_logo.svg"
+              width={230}
+              height={60}
+              alt="logo"
+            />
+          ) : (
+            <Image
+              src="/assets/images/logo4-white-text.png"
+              width={230}
+              height={60}
+              alt="logo"
+            />
+          )}
         </Link>
         <NavigationMenu className="max-lg:hidden">
           <NavigationMenuList>
@@ -178,7 +187,14 @@ const Navbar = () => {
 
         <div className="flex justify-between gap-5">
           <Link href="/contact" className="max-lg:hidden">
-            <Button className="text-primary-500 bg-white hover:bg-gradient-to-br  focus:outline-none dark:focus:ring-green-800 font-medium rounded-3xl text-sm px-6 py-2.5 text-center text-nowrap hover:bg-white">
+            <Button
+              className={cn(
+                "  focus:outline-none dark:focus:ring-green-800 font-medium rounded-3xl text-sm px-6 py-2.5 text-center text-nowrap hover:bg-white",
+                scrolled
+                  ? "text-primary-500 bg-white"
+                  : "bg-primary-500 text-white hover:bg-primary-300"
+              )}
+            >
               Contact Us
             </Button>
           </Link>
