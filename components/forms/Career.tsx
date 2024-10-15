@@ -68,8 +68,8 @@ const Career = () => {
       };
 
       await emailjs.send(
-        "service_b6l9gps", // Replace with your EmailJS service ID
-        "template_t4189v4", // Replace with your EmailJS template ID
+        "service_qrze2ow", // Replace with your EmailJS service ID
+        "template_17icdzk", // Replace with your EmailJS template ID
         templateParams,
         "sFrbXUD59kHipU2cg" // Replace with your EmailJS user ID
       );
