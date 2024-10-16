@@ -11,7 +11,7 @@ interface Props {
 
 const CTA = ({ title, action, link }: Props) => {
   return (
-    <section className="flex items-center justify-center px-16 max-md:px-5">
+    <section className="flex items-center justify-center px-16 max-md:px-5 mt-10">
       <div className="w-[1200px] max-w-full flex justify-center pb-6 flex-col items-center">
         <div className="relative shadow-xl flex justify-center items-center py-12 rounded-3xl w-full flex-col cta-gradient px-20">
           <Image
