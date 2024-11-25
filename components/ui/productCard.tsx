@@ -16,11 +16,10 @@ const ProductCard = ({ image, title, caption, link }: ProductCardProps) => {
           sizes="100vw"
           style={{
             width: "100%",
-            height: "180px",
             objectFit: "cover",
             objectPosition: "center top",
           }}
-          className="rounded-2xl bg-cover"
+          className="rounded-2xl bg-cover aspect-video"
         />
         <p className="base-bold mt-10">{title}</p>
         <p className="mt-10 body-regular">{caption}</p>
