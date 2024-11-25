@@ -41,9 +41,10 @@ const page = () => {
             </div>
             <div className="flex-1">
               <Image
-                src="/assets/images/preventive-maintenance.svg"
+                src="/assets/images/preventive-maintenance.jpg"
                 width={0}
                 height={0}
+                sizes="100vw"
                 style={{ width: "100%", height: "500px", objectFit: "contain" }} // optional
                 alt="genuine-parts-image"
                 className="rounded-2xl object-cover"

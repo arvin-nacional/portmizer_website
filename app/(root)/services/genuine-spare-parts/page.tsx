@@ -42,9 +42,10 @@ const page = () => {
             </div>
             <div className="flex-1">
               <Image
-                src="/assets/images/services1.svg"
+                src="/assets/images/services1-1.jpg"
                 width={0}
                 height={0}
+                sizes="100vw"
                 style={{ width: "100%", height: "500px" }} // optional
                 alt="genuine-parts-image"
                 className="rounded-2xl object-cover"

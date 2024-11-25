@@ -48,7 +48,8 @@ const page = () => {
             </div>
             <div className="flex-1">
               <Image
-                src="/assets/images/training.svg"
+                src="/assets/images/training.jpg"
+                sizes="100vw"
                 width={0}
                 height={0}
                 style={{ width: "100%", height: "500px", objectFit: "contain" }} // optional

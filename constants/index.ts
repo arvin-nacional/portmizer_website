@@ -355,35 +355,35 @@ export const servicesCard: ProductCardProps[] = [
     title: "Genuine Spare Parts",
     caption:
       "Supplying authentic spare parts for optimal equipment performance.",
-    image: "/assets/images/services1.svg",
+    image: "/assets/images/services1.jpg",
   },
   {
     link: "/services/preventive-maintenance",
     title: "Preventive Maintenance",
     caption:
       "Ensuring equipment longevity and reliability through preventive maintenance.",
-    image: "/assets/images/preventive-maintenance.svg",
+    image: "/assets/images/preventive-maintenance.jpg",
   },
   {
     link: "/services/performance-upgrade",
     title: "Performance Upgrade",
     caption:
       "Enhancing equipment efficiency with targeted performance upgrades.",
-    image: "/assets/images/services3.svg",
+    image: "/assets/images/services3.jpg",
   },
   {
     link: "/services/conversions-overhauling",
     title: "Conversions and Overhauling",
     caption:
       "Transforming and overhauling equipment for improved functionality.",
-    image: "/assets/images/services4.svg",
+    image: "/assets/images/services4.jpg",
   },
   {
     link: "/services/training",
     title: "Maintenance & Operators Training ",
     caption:
       "Providing expert training programs for safe and efficient equipment operation.",
-    image: "/assets/images/training.svg",
+    image: "/assets/images/training.jpg",
   },
 ];
 
