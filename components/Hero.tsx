@@ -55,20 +55,21 @@ const Hero = () => {
                     driving progress and achieving operational excellence in the
                     dynamic world of port and container handling.
                   </h2>
-                  <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out animate__fadeIn animate__delay-3s">
-                    <Link
-                      href="/contact"
-                      className="base-medium flex gap-2 items-center"
-                    >
+                  <Link
+                    href="/contact"
+                    className="base-medium flex gap-2 items-center"
+                  >
+                    <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out animate__fadeIn animate__delay-3s">
                       <Image
                         src="/assets/icons/arrow-right-btn.svg"
                         alt="arrow-right"
                         width={24}
                         height={24}
+                        className="mr-2"
                       />
                       Ask a free consult
-                    </Link>
-                  </Button>
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </div>
@@ -150,20 +151,21 @@ const Hero = () => {
                       </Link>
                     ))}
                   </div>
-                  <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out animate__fadeIn animate__delay-3s">
-                    <Link
-                      href="/contact"
-                      className="base-medium flex gap-2 items-center"
-                    >
+                  <Link
+                    href="/contact"
+                    className="base-medium flex gap-2 items-center"
+                  >
+                    <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out animate__fadeIn animate__delay-3s">
                       <Image
                         src="/assets/icons/arrow-right-btn.svg"
                         alt="arrow-right"
                         width={24}
                         height={24}
+                        className="mr-2"
                       />
                       Ask a free consult
-                    </Link>
-                  </Button>
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </div>
@@ -214,20 +216,21 @@ const Hero = () => {
                       </Link>
                     ))}
                   </div>
-                  <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out animate__fadeIn animate__delay-3s">
-                    <Link
-                      href="/contact"
-                      className="base-medium flex gap-2 items-center"
-                    >
+                  <Link
+                    href="/contact"
+                    className="base-medium flex gap-2 items-center"
+                  >
+                    <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out animate__fadeIn animate__delay-3s">
                       <Image
                         src="/assets/icons/arrow-right-btn.svg"
                         alt="arrow-right"
                         width={24}
                         height={24}
+                        className="mr-2"
                       />
                       Ask a free consult
-                    </Link>
-                  </Button>
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </div>

@@ -45,20 +45,21 @@ const HomeAbout = () => {
             worldwide, catering to a growing network of crane owners, managers,
             and operators.
           </p>
-          <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out mt-10">
-            <Link
-              href="/company/about"
-              className="base-medium flex gap-2 items-center"
-            >
+          <Link
+            href="/company/about"
+            className="base-medium flex gap-2 items-center"
+          >
+            <Button className="px-7 py-6 bg-primary-500 hover:bg-primary-300 transition-all duration-300 ease-in-out mt-10">
               <Image
                 src="/assets/icons/arrow-right-btn.svg"
                 alt="arrow-right"
                 width={24}
                 height={24}
+                className="mr-2"
               />
               Find Out More
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
