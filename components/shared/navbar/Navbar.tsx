@@ -199,11 +199,22 @@ const Navbar = () => {
             </Button>
           </Link>
           <SignedOut>
-            <Link href="/sign-in" className="max-lg:hidden">
-              <Avatar>
+            <Link
+              href="/sign-in"
+              className="max-lg:hidden"
+              aria-label="Sign In Page"
+            >
+              <Image
+                src="/assets/images/default_user.svg"
+                height={40}
+                width={40}
+                className="rounded-[50%]"
+                alt="default Image"
+              />
+              {/* <Avatar>
                 <AvatarImage src="/assets/images/default_user.svg" />
                 <AvatarFallback>PPC</AvatarFallback>
-              </Avatar>
+              </Avatar> */}
             </Link>
           </SignedOut>
           <SignedIn>

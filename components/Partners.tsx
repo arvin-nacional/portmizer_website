@@ -52,9 +52,9 @@ const Partners = () => {
       <div className="w-[1200px] max-w-full justify-between max-md:mt-10">
         <div className="justify-between mb-12 flex items-end px-3">
           <div>
-            <h3 className="h2-bold text-dark-500 mb-2 max-sm:base-bold">
+            <p className="h2-bold text-dark-500 mb-2 max-sm:base-bold">
               Our Partners
-            </h3>
+            </p>
             <div className="h-[7px] w-[120px] primary-gradient"></div>
             <h1 className="text-dark500_light700 mt-5 max-sm:h3-bold  max-md:max-w-full max-md:text-4xl h1-bold">
               Trusted by Leading Industry Partners
