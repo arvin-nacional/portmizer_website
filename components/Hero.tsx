@@ -29,7 +29,20 @@ const Hero = () => {
       >
         <CarouselContent>
           <CarouselItem>
-            <div className="bg-[url('/assets/images/slider-2.jpg')] bg-cover bg-center w-full flex justify-center items-center  px-12 min-h-[600px]">
+            <div
+              className="w-full flex justify-center items-center  px-12 min-h-[600px] "
+              style={{
+                position: "relative",
+              }}
+            >
+              <Image
+                src="/assets/images/slider-2.jpg"
+                alt="Cover Image"
+                className="bg-img"
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10 max-sm:gap-20">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl md:w-2/3">
@@ -93,7 +106,20 @@ const Hero = () => {
             </div>
           </CarouselItem> */}
           <CarouselItem>
-            <div className="bg-[url('/assets/images/hero-image-3.jpg')] bg-cover bg-center w-full flex justify-center items-center px-12">
+            <div
+              className="w-full flex justify-center items-center  px-12 min-h-[600px] "
+              style={{
+                position: "relative",
+              }}
+            >
+              <Image
+                src="/assets/images/hero-image-3.jpg"
+                alt="Cover Image"
+                className="bg-img"
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">
@@ -144,7 +170,20 @@ const Hero = () => {
           </CarouselItem>
 
           <CarouselItem>
-            <div className="bg-[url('/assets/images/slider-3.jpg')] bg-cover bg-center w-full flex justify-center items-center px-12">
+            <div
+              className="w-full flex justify-center items-center  px-12 min-h-[600px] "
+              style={{
+                position: "relative",
+              }}
+            >
+              <Image
+                src="/assets/images/slider-3.jpg"
+                alt="Cover Image"
+                className="bg-img"
+                width={0}
+                height={0}
+                sizes="100vw"
+              />
               <Card className="w-[1200px] pb-6 max-md:mt-10 mt-10">
                 <CardContent className="flex flex-col h-screen items-start justify-center gap-10">
                   <h1 className="text-5xl font-semibold text-light-900 max-sm:text-2xl">

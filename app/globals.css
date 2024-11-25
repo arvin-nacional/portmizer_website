@@ -22,6 +22,16 @@
       transform: rotate(1turn);
     }
   }
+  .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
   .navbar-gradient {
     background: linear-gradient(360deg, #0a7a01 0%, #45bc01 100%);
   }
