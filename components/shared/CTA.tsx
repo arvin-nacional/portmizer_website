@@ -91,9 +91,11 @@ const CTA = ({ title, action, link }: Props) => {
           {/* <h4 className="base-bold mb-5 max-sm:text-sm max-sm:mt-5">
             Where Expertise meets Growth
           </h4> */}
-          <Button className="bg-primary-500 hover:bg-primary-300 z-10 mt-10">
-            <Link href={link}>{action}</Link>
-          </Button>
+          <Link href={link}>
+            <Button className="bg-primary-500 hover:bg-primary-300 z-10 mt-10">
+              {action}
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

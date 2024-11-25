@@ -108,80 +108,80 @@ const Navbar = () => {
         </Link>
         <NavigationMenu className="max-lg:hidden">
           <NavigationMenuList>
-            <div className="flex justify-between w-full ">
-              <NavigationMenuItem>
-                <Link href="/" legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={`${navigationMenuTriggerStyle()} text-white`}
-                  >
-                    Home
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-white">
-                  Products
-                </NavigationMenuTrigger>
-                <NavigationMenuContent className="">
-                  <ul className="gap-3 p-4  w-[350px] bg-white ">
-                    {products.map((component) => (
-                      <ListItem
-                        key={component.title}
-                        title={component.title}
-                        href={component.link}
-                      >
-                        {/* {component.description} */}
-                      </ListItem>
-                    ))}
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-white">
-                  Company
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="gap-3 p-4 w-[300px] bg-white">
-                    {company.map((component) => (
-                      <ListItem
-                        key={component.title}
-                        title={component.title}
-                        href={component.link}
-                      >
-                        {/* {component.description} */}
-                      </ListItem>
-                    ))}
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-white">
-                  Services
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="gap-3 p-4 w-[300px] bg-white">
-                    {services.map((component) => (
-                      <ListItem
-                        key={component.title}
-                        title={component.title}
-                        href={component.link}
-                      >
-                        {/* {component.description} */}
-                      </ListItem>
-                    ))}
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/location" legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={`${navigationMenuTriggerStyle()} text-white`}
-                  >
-                    Locations
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-            </div>
+            {/* <div className="flex justify-between w-full "> */}
+            <NavigationMenuItem>
+              <Link href="/" legacyBehavior passHref>
+                <NavigationMenuLink
+                  className={`${navigationMenuTriggerStyle()} text-white`}
+                >
+                  Home
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-white">
+                Products
+              </NavigationMenuTrigger>
+              <NavigationMenuContent className="">
+                <ul className="gap-3 p-4  w-[350px] bg-white ">
+                  {products.map((component) => (
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      href={component.link}
+                    >
+                      {/* {component.description} */}
+                    </ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-white">
+                Company
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="gap-3 p-4 w-[300px] bg-white">
+                  {company.map((component) => (
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      href={component.link}
+                    >
+                      {/* {component.description} */}
+                    </ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-white">
+                Services
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="gap-3 p-4 w-[300px] bg-white">
+                  {services.map((component) => (
+                    <ListItem
+                      key={component.title}
+                      title={component.title}
+                      href={component.link}
+                    >
+                      {/* {component.description} */}
+                    </ListItem>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/location" legacyBehavior passHref>
+                <NavigationMenuLink
+                  className={`${navigationMenuTriggerStyle()} text-white`}
+                >
+                  Locations
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            {/* </div> */}
           </NavigationMenuList>
         </NavigationMenu>
 
