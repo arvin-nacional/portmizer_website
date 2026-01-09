@@ -1,10 +1,14 @@
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import ParseHTML from "../shared/ParseHTML";
 import Image from "next/image";
 import DeletePost from "../DeletePost";
 import { SignedIn } from "@clerk/nextjs";
+
+function stripHtmlAndTruncate(html: string, maxLength: number = 150): string {
+  const text = html.replace(/<[^>]*>/g, "").replace(/&nbsp;/g, " ").trim();
+  return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+}
 
 interface Props {
   title: string;
@@ -18,12 +22,16 @@ const BlogCard = ({ title, image, date, link, content }: Props) => {
   return (
     <div className="flex flex-col rounded-xl w-[300px] p-5 hover:shadow-lg">
       <Link href={`/company/news/${link}`}>
-        <div
-          className="cursor-pointer bg-cover bg-center h-[200px] rounded-xl"
-          style={{
-            backgroundImage: `url(${image})`,
-          }}
-        ></div>
+        <div className="relative cursor-pointer h-[200px] rounded-xl overflow-hidden">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            sizes="300px"
+            className="object-cover"
+            loading="lazy"
+          />
+        </div>
       </Link>
       <Link href={`/company/news/${link}`}>
         {" "}
@@ -31,7 +39,9 @@ const BlogCard = ({ title, image, date, link, content }: Props) => {
       </Link>
 
       <h2 className="small-regular mb-2">{date}</h2>
-      <ParseHTML data={content} styles="line-clamp-4" />
+      <p className="body-regular line-clamp-4 text-gray-600">
+        {stripHtmlAndTruncate(content)}
+      </p>
       {/* <p className="body-regular line-clamp-4 mt-5">{content}</p> */}
       <div className="flex justify-between items-center mt-5 ">
         <Link href={`/company/news/${link}`}>

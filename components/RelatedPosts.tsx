@@ -14,17 +14,17 @@ const RelatedPosts = async ({ currentPostId, tagIds }: RelatedPostsProps) => {
     <div>
       <p className="base-bold mb-5">Related Posts</p>
       <div className="flex flex-col gap-3">
-        {result?.posts.map((item) => (
+        {result?.posts.map((item: any) => (
           <Link href={`/company/news/${item._id}`} key={item.title}>
             <div className="flex gap-5 max-sm:flex-row max-xl:flex-col">
-              <div>
-                <img
+              <div className="relative w-[67px] h-[60px] flex-shrink-0">
+                <Image
                   src={item.image}
                   alt={item.title}
-                  width={0}
-                  height={0}
-                  style={{ width: "67px", height: "60px" }}
+                  fill
+                  sizes="67px"
                   className="object-cover rounded-lg"
+                  loading="lazy"
                 />
               </div>
 

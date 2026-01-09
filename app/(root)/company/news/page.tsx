@@ -51,13 +51,13 @@ const page = async ({ searchParams }: SearchParamsProps) => {
           </div>
 
           <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
-            {result.posts.map((component) => (
+            {result.posts.map((component: any) => (
               <BlogCard
                 title={component.title}
                 date={formatDate(component.createdAt)}
                 image={component.image}
-                link={component._id}
-                key={component._id}
+                link={String(component._id)}
+                key={String(component._id)}
                 content={component.content}
               />
             ))}
